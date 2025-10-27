@@ -2,6 +2,7 @@ import { Dela_Gothic_One } from "next/font/google";
 import { Archivo } from "next/font/google";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../globals.css";
+import 'remixicon/fonts/remixicon.css'
 import Header from "../components/Header";
 
 

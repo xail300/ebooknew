@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 15px;
-  background: #fff;
+  background: #030E14;
   font-family: "Archivo", sans-serif;
   line-height: 1.5;
   color: #6a7382;
@@ -151,6 +151,26 @@ section {
   padding-bottom: 50px;
 }
 
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-title span {
+  color: #D3ED05;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.section-title h2 {
+  font-size: 58px;
+  line-height: 82px;
+  letter-spacing: -2.22917px;
+  color: white;
+  text-transform: uppercase;
+}
+
 .container {
   max-width: 1420px;
 }
@@ -170,7 +190,7 @@ header.sticky {
   position: fixed;
   width: 100%;
   z-index: 999;
-  background: #000001;
+  background: #030E14;
 }
 
 header.sticky #navbarNav {
@@ -232,6 +252,7 @@ header.sticky img {
   bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
+  border: 1.11458px solid rgba(201, 236, 6, 0.5);
 }
 
 .top-banner .left .overflow-sec p {
@@ -273,6 +294,52 @@ header.sticky img {
 }
 
 /* End */
+
+/* sec one */
+.sec-one {}
+
+.sec-one .sec-one-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec-one .sec-one-body .sec-one-inner {
+  position: relative;
+}
+
+.sec-one .sec-one-body .sec-one-inner .overflow-sec,
+.sec-one .sec-one-body .sec-one-inner .overflow-sec-one {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  border-radius: 26.75px;
+  background: rgba(3, 14, 20, 0.6);
+  backdrop-filter: blur(5.57292px);
+  padding: 10px 25px;
+  position: absolute;
+  transform: rotate(-10.5deg);
+  border: 1.11458px solid rgba(201, 236, 6, 0.5);
+  width: 75%;
+  bottom: 55px;
+  left: 19%;
+}
+
+.sec-one .sec-one-body .sec-one-inner .overflow-sec span,
+.sec-one .sec-one-body .sec-one-inner .overflow-sec-one span {
+  font-size: 21px;
+  font-family: "Dela Gothic One", sans-serif;
+  color: white;
+  text-transform: uppercase;
+}
+
+.sec-one .sec-one-body .sec-one-inner .overflow-sec-one {
+  transform: rotate(8.73deg);
+  left: 8%;
+  bottom: 60px;
+}
+
+/* end */
 
 /* form */
 /* Works for Chrome, Safari, Edge, Opera */
