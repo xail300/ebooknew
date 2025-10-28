@@ -92,12 +92,6 @@ ul.dropdown-menu {
   color: #000001 !important;
 }
 
-.navbar-brand img {
-  /* width: 245px;
-  height: 115px; */
-  width: auto;
-  transition: 0.6s;
-}
 
 .navbar-nav li a {
   font-size: 1rem;
@@ -163,12 +157,19 @@ section {
   text-transform: uppercase;
 }
 
-.section-title h2 {
+.section-title h2,
+.section-title h3 {
   font-size: 58px;
   line-height: 82px;
   letter-spacing: -2.22917px;
   color: white;
   text-transform: uppercase;
+}
+
+.section-title p {
+  color: #FFFFFF;
+  font-size: 20.0625px;
+  opacity: 0.6;
 }
 
 .container {
@@ -198,7 +199,6 @@ header.sticky #navbarNav {
 }
 
 header.sticky img {
-  width: auto;
   transition: all 0.5s ease-in-out;
 }
 
@@ -296,7 +296,9 @@ header.sticky img {
 /* End */
 
 /* sec one */
-.sec-one {}
+.sec-one {
+  padding: 60px 0;
+}
 
 .sec-one .sec-one-body {
   display: flex;
@@ -306,10 +308,12 @@ header.sticky img {
 
 .sec-one .sec-one-body .sec-one-inner {
   position: relative;
+  width: 33.333%;
 }
 
 .sec-one .sec-one-body .sec-one-inner .overflow-sec,
-.sec-one .sec-one-body .sec-one-inner .overflow-sec-one {
+.sec-one .sec-one-body .sec-one-inner .overflow-sec-one,
+.sec-one .sec-one-body .sec-one-inner .overflow-sec-two {
   justify-content: space-between;
   align-items: center;
   display: flex;
@@ -321,12 +325,13 @@ header.sticky img {
   transform: rotate(-10.5deg);
   border: 1.11458px solid rgba(201, 236, 6, 0.5);
   width: 75%;
-  bottom: 55px;
-  left: 19%;
+  bottom: 80px;
+  left: 22%;
 }
 
 .sec-one .sec-one-body .sec-one-inner .overflow-sec span,
-.sec-one .sec-one-body .sec-one-inner .overflow-sec-one span {
+.sec-one .sec-one-body .sec-one-inner .overflow-sec-one span,
+.sec-one .sec-one-body .sec-one-inner .overflow-sec-two span {
   font-size: 21px;
   font-family: "Dela Gothic One", sans-serif;
   color: white;
@@ -334,9 +339,60 @@ header.sticky img {
 }
 
 .sec-one .sec-one-body .sec-one-inner .overflow-sec-one {
+  bottom: 75px;
+  left: 9.5%;
   transform: rotate(8.73deg);
-  left: 8%;
-  bottom: 60px;
+}
+
+.sec-one .sec-one-body .sec-one-inner .overflow-sec-two {
+  transform: rotate(352deg);
+  left: 18.5%;
+  bottom: 70px;
+}
+
+/* end */
+
+/* sec-two */
+.sec-two {}
+
+.sec-two .sec-two-inner {
+  background: #04141C;
+  border-radius: 26.75px;
+  padding: 26px;
+}
+
+.sec-two .sec-two-inner h3 {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 35.6667px;
+  line-height: 50px;
+}
+
+.sec-two .sec-two-inner p {
+  color: #fff;
+  opacity: .6;
+  font-size: 20.0625px;
+}
+
+.sec-two .sec-two-inner .sec-two-sub-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 40px;
+}
+
+.sec-two .sec-two-inner .sec-two-sub-inner span {
+  background: linear-gradient(179.05deg, rgba(255, 255, 255, 0.1) 0.82%, rgba(255, 255, 255, 0) 110.86%);
+  border-radius: 31.5871px;
+  padding: 13.4245px 30.4737px 13.4245px 31.5871px;
+  letter-spacing: -0.315871px;
+  color: #FFFFFF;
+  font-size: 15px;
+  width: 32.333%;
+  text-align: center;
 }
 
 /* end */
