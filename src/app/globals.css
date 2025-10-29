@@ -565,6 +565,11 @@ header.sticky img {
   position: relative;
 }
 
+.sec-three .left .sec-three-inner img,
+.sec-three .right .sec-three-inner img{
+  animation: 8s linear infinite rotate;
+}
+
 .sec-three .left .sec-three-inner:nth-child(2) {
   right: 50px;
 }
