@@ -353,12 +353,15 @@ header.sticky img {
 /* end */
 
 /* sec-two */
-.sec-two {}
+.sec-two {
+  padding: 60px 0 160px;
+}
 
 .sec-two .sec-two-inner {
   background: #04141C;
   border-radius: 26.75px;
   padding: 26px;
+  margin-bottom: 44px;
 }
 
 .sec-two .sec-two-inner h3 {
@@ -395,8 +398,254 @@ header.sticky img {
   text-align: center;
 }
 
+.sec-two .sec-two-inner .sec-two-box {
+  background: linear-gradient(128.76deg, #0D435E 0%, rgba(8, 8, 8, 0) 100%);
+  backdrop-filter: blur(6.375px);
+  border-radius: 29.325px 30.6px 30.6px 30.6px;
+  padding: 35px;
+}
+
+.sec-two .sec-two-inner .sec-two-box .sec-two-inner-box {
+  background: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(6.375px);
+  border-radius: 21.675px;
+  padding: 25px;
+}
+
+.sec-two .sec-two-inner .sec-two-box .sec-two-inner-box span {
+  color: #FFFFFF;
+  font-size: 15px;
+}
+
+.sec-two .sec-two-inner .sec-two-box .sec-two-inner-box ul {
+  padding-left: 0;
+  list-style: none;
+  margin-top: 15px;
+}
+
+.sec-two .sec-two-inner .sec-two-box .sec-two-inner-box ul li {
+  color: #FFFFFF;
+  font-size: 15px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.sec-two .sec-two-inner .sec-two-box .sec-two-inner-box ul li i {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 3.825px;
+  padding: 10px 15px;
+  font-size: 20px;
+}
+
+.sec-two .sec-two-inner .sec-two-box .pattern-one>img {
+  position: absolute;
+  top: 90px;
+  left: -15px;
+  animation: rotate 4s linear infinite;
+}
+
+.sec-two .sec-two-inner .sec-two-box .pattern-two>img {
+  position: absolute;
+  top: 160px;
+  right: -15px;
+  animation: rotate 4s linear infinite;
+}
+
+.sec-two .sec-two-inner .sec-two-box .pattern-three>img {
+  position: absolute;
+  bottom: 90px;
+  right: -15px;
+  animation: rotate 4s linear infinite;
+  z-index: 9;
+}
+
+.sec-two .sec-two-inner .sec-two-box .btn-contact {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.sec-two .sec-two-inner .sec-two-box .btn-contact>a {
+  background: #D3ED05;
+  border-radius: 100px;
+  padding: 7px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.sec-two .sec-two-inner .sec-two-box .btn-contact>a span {
+  background: #111111;
+  border-radius: 100px;
+  padding: 10px 35px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* end */
 
+/* banner-sec */
+.banner-sec {
+  background: linear-gradient(92.45deg, #3f9340 -12.22%, #0d3837 121.95%);
+  height: 266px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.banner-sec .left h3 {
+  font-size: 34.36px;
+  line-height: 43px;
+  color: #FFFFFF;
+}
+
+.banner-sec .right {
+  position: relative;
+}
+
+.banner-sec .right>img {
+  position: absolute;
+  bottom: -208px;
+}
+
+/* end */
+
+/* sec-three */
+.sec-three {
+  padding: 60px 0;
+  position: relative;
+}
+
+.sec-three::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 293px;
+  height: 285px;
+  background: #D3ED05;
+  opacity: 0.75;
+  filter: blur(158.082px);
+  z-index: -1;
+}
+
+.sec-three .section-title {
+  margin-bottom: 0;
+}
+
+.sec-three .bg-image {
+  background: url("/assets/images/sec-three-bg.png") no-repeat;
+  background-position: 50% 280%;
+  padding-top: 100px;
+}
+
+.sec-three .left,
+.sec-three .right {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sec-three .left .sec-three-inner,
+.sec-three .right .sec-three-inner {
+  position: relative;
+}
+
+.sec-three .left .sec-three-inner:nth-child(2) {
+  right: 50px;
+}
+
+.sec-three .right .sec-three-inner:nth-child(1) {
+  top: 30px;
+}
+
+.sec-three .right .sec-three-inner:nth-child(2) {
+  left: 50px;
+}
+
+.sec-three .left .sec-three-inner span,
+.sec-three .right .sec-three-inner span {
+  letter-spacing: -0.47455px;
+  text-transform: uppercase;
+  font-size: 22.7784px;
+  color: #FFFFFF;
+  font-family: "Dela Gothic One", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* end */
+
+/* service-sec */
+.service-sec {
+  padding: 60px 0;
+}
+
+.service-sec .section-title {
+  text-align: start;
+}
+
+.service-sec .right .service-right-inner {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  border-bottom: 1px solid #BFBFBF;
+  padding: 15px 0;
+}
+
+.service-sec .right .service-right-inner:nth-child(1) {
+  border-top: 1px solid #BFBFBF;
+}
+
+.service-sec .right .service-right-inner span {
+  color: #7D8387;
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+.service-sec .right .service-right-inner a {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 32px;
+  font-family: "Dela Gothic One", sans-serif;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.service-sec .right .service-right-inner a:hover {
+  color: #d3ed05;
+}
+
+.service-sec .right .service-right-inner i {
+  color: #fff;
+  font-size: 35px;
+}
+
+/* end */
+/* full-img */
+.full-img img {
+  position: relative !important;
+}
+
+/* end */
 /* form */
 /* Works for Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
