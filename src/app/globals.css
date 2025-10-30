@@ -9,7 +9,6 @@ body {
   padding: 0;
   font-size: 15px;
   background: #030E14;
-  font-family: "Archivo", sans-serif;
   line-height: 1.5;
   color: #6a7382;
   font-weight: 300;
@@ -263,6 +262,9 @@ header.sticky img {
 
 .top-banner .center {
   margin-top: 84px;
+  position: relative;
+  width: 100%;
+  height: 535px;
 }
 
 .top-banner .left .overflow-sec span {
@@ -560,14 +562,20 @@ header.sticky img {
   justify-content: space-between;
 }
 
+.sec-three .center {
+  position: relative;
+  width: 100%;
+  height: 876px;
+}
+
 .sec-three .left .sec-three-inner,
 .sec-three .right .sec-three-inner {
   position: relative;
 }
 
 .sec-three .left .sec-three-inner img,
-.sec-three .right .sec-three-inner img{
-  animation: 8s linear infinite rotate;
+.sec-three .right .sec-three-inner img {
+  animation: rotate 8s linear infinite;
 }
 
 .sec-three .left .sec-three-inner:nth-child(2) {
@@ -605,6 +613,12 @@ header.sticky img {
 
 .service-sec .section-title {
   text-align: start;
+}
+
+.service-sec .left {
+  position: relative;
+  width: 100%;
+  height: 490px;
 }
 
 .service-sec .right .service-right-inner {
@@ -645,12 +659,197 @@ header.sticky img {
 }
 
 /* end */
-/* full-img */
-.full-img img {
-  position: relative !important;
+
+/* road-map */
+.road-map {
+  padding: 60px 0 0;
+}
+
+.road-map .road-map-body {
+  justify-content: center;
+  display: flex;
+  gap: 40px;
+}
+
+
+.road-map .road-map-body .road-map-left-inner:nth-child(1) {
+  margin-bottom: 430px;
+}
+
+.road-map .road-map-body .road-map-right-inner:nth-child(1) {
+  margin-top: 320px;
+  margin-bottom: 430px;
+}
+
+.road-map .road-map-body .road-map-left .road-map-left-inner span,
+.road-map .road-map-body .road-map-right .road-map-right-inner span {
+  letter-spacing: 2.33px;
+  text-transform: uppercase;
+  color: #D3ED05;
+  font-size: 19.42px;
+  font-family: "Dela Gothic One", sans-serif;
+}
+
+.road-map .road-map-body .road-map-left .road-map-left-inner h3,
+.road-map .road-map-body .road-map-right .road-map-right-inner h3 {
+  letter-spacing: -1.67188px;
+  text-transform: uppercase;
+  font-size: 34.42px;
+  line-height: 52px;
+  color: #FFFFFF;
+}
+
+.road-map .road-map-body .road-map-left .road-map-left-inner ul li,
+.road-map .road-map-body .road-map-right .road-map-right-inner ul li {
+  text-transform: capitalize;
+  color: #FFFFFF;
+  font-size: 21.42px;
+  line-height: 33px;
+}
+
+.road-map .road-map-body .road-map-center {
+  position: relative;
+}
+
+.road-map .road-map-body .road-map-center:after {
+  content: "";
+  background-color: #072733;
+  width: 36px;
+  height: 75%;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.road-map .road-map-body .road-map-center .center-space {
+  height: 164px;
+}
+
+.road-map .road-map-body .road-map-center .shape {
+  position: relative;
+}
+
+.road-map .road-map-body .road-map-center .shape>img {
+  animation: rotate 3s linear infinite;
+}
+
+.road-map .road-map-body .road-map-center .shape>span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -60%);
+  letter-spacing: -0.809125px;
+  text-transform: uppercase;
+  font-size: 38px;
+  color: #FFFFFF;
+  font-family: "Dela Gothic One", sans-serif;
 }
 
 /* end */
+/* full-img */
+.full-img .full-img-body {
+  position: relative;
+  width: 100%;
+  height: 636px;
+}
+
+/* end */
+
+/* faqs */
+.question-answer {
+  padding: 60px 0
+}
+
+.question-answer .qa-sec .accordion-item {
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 20px !important;
+  background: transparent;
+  border: 2px solid #8a8f92;
+}
+
+.question-answer .qa-sec h2 button {
+  color: #ffffff;
+  box-shadow: none;
+  background: 0 0;
+  margin-bottom: 0;
+  font-family: "Archivo", sans-serif;
+  font-size: 22px;
+  border-radius: 0 !important;
+  padding: 22px;
+}
+
+.question-answer .qa-sec .accordion-button:after {
+  background: #d3ed05;
+  border-radius: 100px;
+  transform: scale(1.6) !important
+    /* background-image: url(/assets/images/plus.png);
+  transform: scale(1.4) !important */
+}
+
+.question-answer .qa-sec .accordion-button:not(.collapsed):after {
+  /* background-image: url(/assets/images/minus.png) */
+  background: #d3ed05;
+  border-radius: 100px;
+}
+
+.question-answer .qa-sec .accordion-body {
+  border-radius: 0 0 20px 20px
+}
+
+.question-answer .qa-sec .accordion-body p {
+  margin-bottom: 0;
+  color: #fff;
+  opacity: .6;
+  font-size: 20.0625px;
+}
+
+/* end */
+
+/* get quote */
+/* contact us */
+.contact-us {
+  padding: 0px 0px 60px;
+}
+
+.contact-us .contact-left {
+  position: relative;
+  width: 100%;
+  height: 519px;
+}
+
+.contact-us form input,
+.contact-us form select,
+.contact-us form textarea {
+  box-shadow: 0 1.16036px 2.32072px #1b1f230d;
+  background: linear-gradient(163.25deg, rgba(16, 16, 16, 0.324) -24.95%, rgba(0, 0, 0, 0) 117%);
+  border: 2.85944px solid rgba(255, 255, 255, 0.45);
+  border-radius: 5.71889px;
+}
+
+.contact-us form select option {
+  color: black;
+}
+
+.contact-us form label {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: #FAFAFA;
+}
+
+.contact-bg {
+  padding: 40px 50px;
+  background: url("/assets/images/contact-bg.png") no-repeat center;
+  background-size: cover;
+  border-radius: 32px;
+}
+
+/* end */
+/* end */
+
 /* form */
 /* Works for Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -682,19 +881,19 @@ input::-webkit-inner-spin-button {
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #1e1e1e !important;
+  color: #ffffff !important;
   font-weight: 400;
 }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #1e1e1e !important;
+  color: #ffffff !important;
   font-weight: 400;
 }
 
 :-ms-input-placeholder {
   /* IE 10+ */
-  color: #1e1e1e !important;
+  color: #ffffff !important;
   font-weight: 400;
 }
 
@@ -1036,3 +1235,18 @@ hr {
 }
 
 /* end */
+
+@media (min-width: 1280px) and (max-width: 1366px){
+  .top-banner .left>img {
+    width: 100%;
+  }
+
+  .sec-three .right .sec-three-inner:nth-child(2) {
+    left: 0;
+  }
+
+  .sec-three .left .sec-three-inner span,
+  .sec-three .right .sec-three-inner span {
+    transform: translate(-40%, -50%);
+  }
+}

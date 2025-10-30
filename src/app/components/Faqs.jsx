@@ -4,24 +4,29 @@ import SectionTitle from "./SectionTitle"
 
 const faqContent = [
     {
-        title: 'What industries does Optimo serve?',
-        desc: 'It starts with a conversation. During an initial consultation, we’ll learn about your goals, challenges, and opportunities, then recommend services— whether that’s growth planning, talent strategy, or performance optimization —best aligned to your needs.'
+        title: '1. What is nftninja?',
+        desc: `nftninja is a collection of 5,000 unique, masked ninja NFTs living on the Ethereum blockchain. 
+               Each ninja is packed with distinct traits, rarity, and hidden utility within the ecosystem.`
     },
     {
-        title: 'How do I know which service is right for my business?',
-        desc: 'It starts with a conversation. During an initial consultation, we’ll learn about your goals, challenges, and opportunities, then recommend services— whether that’s growth planning, talent strategy, or performance optimization —best aligned to your needs.'
+        title: '2. How can I mint a ninja?',
+        desc: `nftninja is a collection of 5,000 unique, masked ninja NFTs living on the Ethereum blockchain. 
+               Each ninja is packed with distinct traits, rarity, and hidden utility within the ecosystem.`
     },
     {
-        title: 'Do you offer customized solutions or standard frameworks?',
-        desc: 'It starts with a conversation. During an initial consultation, we’ll learn about your goals, challenges, and opportunities, then recommend services— whether that’s growth planning, talent strategy, or performance optimization —best aligned to your needs.'
+        title: '3. Will there be a game or metaverse integration?',
+        desc: `nftninja is a collection of 5,000 unique, masked ninja NFTs living on the Ethereum blockchain. 
+               Each ninja is packed with distinct traits, rarity, and hidden utility within the ecosystem.`
     },
     {
-        title: 'How do you measure success with clients?',
-        desc: 'It starts with a conversation. During an initial consultation, we’ll learn about your goals, challenges, and opportunities, then recommend services— whether that’s growth planning, talent strategy, or performance optimization —best aligned to your needs.'
+        title: '4. What is $shadow and how do I earn it?',
+        desc: `nftninja is a collection of 5,000 unique, masked ninja NFTs living on the Ethereum blockchain. 
+               Each ninja is packed with distinct traits, rarity, and hidden utility within the ecosystem.`
     },
     {
-        title: 'How can I get started with Optimo?',
-        desc: 'It starts with a conversation. During an initial consultation, we’ll learn about your goals, challenges, and opportunities, then recommend services— whether that’s growth planning, talent strategy, or performance optimization —best aligned to your needs.'
+        title: '5. What can I do with my nftninja?',
+        desc: `nftninja is a collection of 5,000 unique, masked ninja NFTs living on the Ethereum blockchain. 
+               Each ninja is packed with distinct traits, rarity, and hidden utility within the ecosystem.`
     },
 ]
 
@@ -34,8 +39,8 @@ const Faqs = () => {
                         <SectionTitle smallHeading="FAQ" heading="THE PATH OF YOUR EBOOK" desc="A stealth-crafted ecosystem built for sustainability, utility, and long-term holder value." HeadingTag="h3" />
                     </div>
                 </div>
-                <div className="row justify-content-between">
-                    <div className="col-xl-6 col-lg-7 col-md-7">
+                <div className="row justify-content-center">
+                    <div className="col-xl-12 col-lg-12 col-md-12">
                         <div className="qa-sec">
                             <Accordion defaultActiveKey="0">
                                 {

@@ -4,6 +4,9 @@ import BannerSec from "../components/BannerSec";
 import SectionTitle from "../components/SectionTitle";
 import { services } from "../lib/servicesData";
 import Faqs from "../components/Faqs";
+import GetQuote from "../components/GetQuote";
+import MapLeftInner from "../components/MapLeftInner";
+import MapRightInner from "../components/MapRightInner";
 
 export default function Home() {
   return (
@@ -35,7 +38,7 @@ export default function Home() {
             </div>
             <div className="col-xl-5 col-lg-5 col-md-6">
               <div className="center text-center">
-                <Image src="/assets/images/img-2.png" alt="" width={491} height={535} />
+                <Image src="/assets/images/img-2.png" alt="" fill sizes="(max-width: 767px) 100vw, 33vw"/>
               </div>
             </div>
             <div className="col-xl-3 col-lg-3 col-md-6">
@@ -193,7 +196,7 @@ export default function Home() {
               </div>
               <div className="col-xl-4 col-lg-4 col-md-4">
                 <div className="center">
-                  <Image src="/assets/images/mobile-img.png" alt="" width={449} height={876} />
+                  <Image src="/assets/images/mobile-img.png" alt="" fill  sizes="(max-width: 767px) 100vw, 33vw"/>
                 </div>
               </div>
               <div className="col-xl-3 col-lg-3 col-md-3">
@@ -227,7 +230,7 @@ export default function Home() {
           <div className="row justify-content-between align-items-center mt-5">
             <div className="col-xl-4 col-lg-4 col-md-4">
               <div className="left">
-                <Image src="/assets/images/img-9.png" alt="" width={449} height={490} />
+                <Image src="/assets/images/img-9.png" alt="" fill sizes="(max-width: 767px) 100vw, 33vw"/>
               </div>
             </div>
             <div className="col-xl-6 col-lg-6 col-md-6">
@@ -257,6 +260,35 @@ export default function Home() {
               <SectionTitle smallHeading="Roadmap" heading="THE PATH OF YOUR EBOOK" desc="A step-by-step crafted process to transform your idea into a beautifully published eBook — ready for readers, stores, and success." HeadingTag="h3" />
             </div>
           </div>
+          <div className="road-map-body">
+            <div className="road-map-left">
+              <MapLeftInner />
+            </div>
+            <div className="road-map-center">
+              <div className="shape">
+                <Image src="/assets/images/shape.png" alt="" width={148} height={148} />
+                <span>01</span>
+              </div>
+              <div className="center-space"></div>
+              <div className="shape">
+                <Image src="/assets/images/shape.png" alt="" width={148} height={148} />
+                <span>02</span>
+              </div>
+              <div className="center-space"></div>
+              <div className="shape">
+                <Image src="/assets/images/shape.png" alt="" width={148} height={148} />
+                <span>03</span>
+              </div>
+              <div className="center-space"></div>
+              <div className="shape">
+                <Image src="/assets/images/shape.png" alt="" width={148} height={148} />
+                <span>04</span>
+              </div>
+            </div>
+            <div className="road-map-right">
+              <MapRightInner />
+            </div>
+          </div>
         </div>
       </section>
       {/* end */}
@@ -265,8 +297,8 @@ export default function Home() {
         <div className="container-fluid px-0">
           <div className="row">
             <div className="col-xl-12 col-lg-12 col-md-12">
-              <div className="text-center">
-                <Image src="/assets/images/full-img.png" alt="" fill />
+              <div className="full-img-body">
+                <Image src="/assets/images/full-img.png" alt="" fill sizes="(max-width: 767px) 100vw, 33vw"/>
               </div>
             </div>
           </div>
@@ -274,7 +306,10 @@ export default function Home() {
       </section>
       {/* end */}
       {/* faqs */}
-      {/* <Faqs /> */}
+      <Faqs />
+      {/* end */}
+      {/* get quote */}
+      <GetQuote />
       {/* end */}
     </>
 
