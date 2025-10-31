@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "../globals.css";
 import 'remixicon/fonts/remixicon.css'
 import Header from "../components/Header";
+import Footer from "../components/Footer";
+import { ModalProvider } from "../context/ModalContext";
 
 
 const delaGothic = Dela_Gothic_One({
@@ -27,8 +29,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${delaGothic.className} ${archivo.className}`}>
-        <Header />
-        {children}
+        <ModalProvider>
+          <Header />
+          {children}
+          <Footer />
+        </ModalProvider>
       </body>
     </html>
   );

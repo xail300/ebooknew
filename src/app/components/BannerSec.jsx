@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Button from "./Button"
 
 
 const BannerSec = () => {
@@ -9,7 +10,7 @@ const BannerSec = () => {
                     <div className="col-xl-6 col-lg-6 col-md-6">
                         <div className="left">
                             <h3>Looking to Create A Scalable Ebook Solution?</h3>
-                            <button className="btn btn-theme">Get Started </button>
+                            <Button />
                         </div>
                     </div>
                     <div className="col-xl-4 col-lg-4 col-md-4">

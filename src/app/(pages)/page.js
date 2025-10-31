@@ -7,8 +7,10 @@ import Faqs from "../components/Faqs";
 import GetQuote from "../components/GetQuote";
 import MapLeftInner from "../components/MapLeftInner";
 import MapRightInner from "../components/MapRightInner";
+import Button from "../components/Button";
 
 export default function Home() {
+
   return (
     <>
       {/* top banner */}
@@ -19,7 +21,7 @@ export default function Home() {
               <div className="center-col">
                 <h1>Professional <span>EBook</span> Writing Services</h1>
                 <p className="mb-4">Avail the best ghost-writing services from our affordable self-publishing ghostwriting agency. We are experts in creating fiction, non-fiction, mysteries.</p>
-                <button className="btn btn-theme">Get Started </button>
+                <Button />
               </div>
             </div>
           </div>
@@ -38,7 +40,7 @@ export default function Home() {
             </div>
             <div className="col-xl-5 col-lg-5 col-md-6">
               <div className="center text-center">
-                <Image src="/assets/images/img-2.png" alt="" fill sizes="(max-width: 767px) 100vw, 33vw"/>
+                <Image src="/assets/images/img-2.png" alt="" fill sizes="(max-width: 767px) 100vw, 33vw" />
               </div>
             </div>
             <div className="col-xl-3 col-lg-3 col-md-6">
@@ -162,7 +164,7 @@ export default function Home() {
               <div className="sec-two-inner">
                 <h3>READY TO PUBLISH YOUR MASTERPIECE?</h3>
                 <p>Start your journey with professional eBook design and unlock access to premium creative services and a community that values your vision.</p>
-                <button className="btn btn-theme">Get Started </button>
+                <Button />
               </div>
             </div>
           </div>
@@ -196,7 +198,7 @@ export default function Home() {
               </div>
               <div className="col-xl-4 col-lg-4 col-md-4">
                 <div className="center">
-                  <Image src="/assets/images/mobile-img.png" alt="" fill  sizes="(max-width: 767px) 100vw, 33vw"/>
+                  <Image src="/assets/images/mobile-img.png" alt="" fill sizes="(max-width: 767px) 100vw, 33vw" />
                 </div>
               </div>
               <div className="col-xl-3 col-lg-3 col-md-3">
@@ -230,7 +232,7 @@ export default function Home() {
           <div className="row justify-content-between align-items-center mt-5">
             <div className="col-xl-4 col-lg-4 col-md-4">
               <div className="left">
-                <Image src="/assets/images/img-9.png" alt="" fill sizes="(max-width: 767px) 100vw, 33vw"/>
+                <Image src="/assets/images/img-9.png" alt="" fill sizes="(max-width: 767px) 100vw, 33vw" />
               </div>
             </div>
             <div className="col-xl-6 col-lg-6 col-md-6">
@@ -298,7 +300,7 @@ export default function Home() {
           <div className="row">
             <div className="col-xl-12 col-lg-12 col-md-12">
               <div className="full-img-body">
-                <Image src="/assets/images/full-img.png" alt="" fill sizes="(max-width: 767px) 100vw, 33vw"/>
+                <Image src="/assets/images/full-img.png" alt="" fill sizes="(max-width: 767px) 100vw" />
               </div>
             </div>
           </div>
