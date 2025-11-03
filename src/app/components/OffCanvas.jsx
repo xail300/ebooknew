@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { Offcanvas } from 'react-bootstrap'
 
-const OffCanvas = ({ show, handleClose }) => {
+const OffCanvas = ({ show, handleClose, pathname }) => {
 
     const [openDropdown, setOpenDropdown] = useState({
         editingServices: false,
@@ -27,7 +27,7 @@ const OffCanvas = ({ show, handleClose }) => {
                 <Offcanvas.Body>
                     <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li className="nav-item">
-                            <Link className="nav-link " href="#">Home</Link>
+                            <Link className={`nav-link ${pathname === '/' ? 'active' : ''}`} href="#">Home</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link " href="#">About Us</Link>
@@ -66,10 +66,6 @@ const OffCanvas = ({ show, handleClose }) => {
                             </Link>
                         </li>
                     </ul>
-                    <div className="mt-3">
-                        <button data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal"
-                            className="btn btn-theme">Get Started <span><i className="ri-arrow-right-up-line"></i></span></button>
-                    </div>
                 </Offcanvas.Body>
             </Offcanvas>
         </>

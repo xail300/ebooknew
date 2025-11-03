@@ -75,28 +75,34 @@ export default function Home() {
             <div className="sec-one-inner">
               <Image src="/assets/images/img-3.png" alt="" width={497} height={552} />
               <div className="overflow-sec">
-                <div className="mb-0">
-                  <span>Books cover</span>
+                <div className="overflow-sec-inner">
+                  <div className="mb-0">
+                    <span>Books cover</span>
+                  </div>
+                  <Image src="/assets/images/circle-img.png" alt="" width={62} height={62} />
                 </div>
-                <Image src="/assets/images/circle-img.png" alt="" width={62} height={62} />
               </div>
             </div>
             <div className="sec-one-inner">
               <Image src="/assets/images/img-4.png" alt="" width={487} height={543} />
               <div className="overflow-sec-one">
-                <div className="mb-0">
-                  <span>Author website</span>
+                <div className="overflow-sec-inner">
+                  <div className="mb-0">
+                    <span>Author website</span>
+                  </div>
+                  <Image src="/assets/images/circle-img.png" alt="" width={62} height={62} />
                 </div>
-                <Image src="/assets/images/circle-img.png" alt="" width={62} height={62} />
               </div>
             </div>
             <div className="sec-one-inner">
               <Image src="/assets/images/img-5.png" alt="" width={478} height={536} />
               <div className="overflow-sec-two">
-                <div className="mb-0">
-                  <span>illustration</span>
+                <div className="overflow-sec-inner">
+                  <div className="mb-0">
+                    <span>illustration</span>
+                  </div>
+                  <Image src="/assets/images/circle-img.png" alt="" width={62} height={62} />
                 </div>
-                <Image src="/assets/images/circle-img.png" alt="" width={62} height={62} />
               </div>
             </div>
           </div>
@@ -134,8 +140,8 @@ export default function Home() {
               <div className="sec-two-inner">
                 <h3>AUTHOR  & COLLABORATION HUB</h3>
                 <p>Join a growing network of writers, creators, and digital publishers.</p>
-                <div className="text-center mt-5">
-                  <Image src="/assets/images/img-6.png" alt="" width={358} height={269} />
+                <div className="sec-sub-inner mt-5">
+                  <Image src="/assets/images/img-6.png" alt="" fill sizes="(max-width: 767px) 100vw"/>
                 </div>
               </div>
             </div>
@@ -229,7 +235,7 @@ export default function Home() {
               <SectionTitle desc="Our team of hardworking individuals has always strived for perfection. We have helped many writers and authors to date to publish their masterpieces, edit their manusciripts for perfection" />
             </div>
           </div>
-          <div className="row justify-content-between align-items-center mt-5">
+          <div className="row justify-content-between align-items-center mt-md-5 mt-0">
             <div className="col-xl-4 col-lg-4 col-md-4">
               <div className="left">
                 <Image src="/assets/images/img-9.png" alt="" fill sizes="(max-width: 767px) 100vw, 33vw" />
@@ -266,7 +272,7 @@ export default function Home() {
             <div className="road-map-left">
               <MapLeftInner />
             </div>
-            <div className="road-map-center">
+            <div className="road-map-center d-md-block d-none">
               <div className="shape">
                 <Image src="/assets/images/shape.png" alt="" width={148} height={148} />
                 <span>01</span>

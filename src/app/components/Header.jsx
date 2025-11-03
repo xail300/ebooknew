@@ -3,9 +3,12 @@ import Link from "next/link"
 import Image from "next/image"
 import { useState, useEffect } from "react";
 import { useModal } from "../context/ModalContext";
+import OffCanvas from "./OffCanvas";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
 
+    // sticky / hover state
     const [isSticky, setIsSticky] = useState(false);
     const [isHover, setIsHover] = useState({
         services: false,
@@ -54,6 +57,10 @@ const Header = () => {
     const { modalShow } = useModal();
     // end
 
+    // active link logic
+    const pathname = usePathname();
+    // end
+
     return (
         <>
             <header className={`header ${isSticky ? 'sticky' : ''}`}>
@@ -69,13 +76,13 @@ const Header = () => {
                         <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
                             <ul className="navbar-nav">
                                 <li className="nav-item">
-                                    <Link className="nav-link" href="/">Home</Link>
+                                    <Link className={`nav-link ${pathname === '/' ? 'active' : ''}`} href="/">Home</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link className="nav-link " href="about-us">About Us</Link>
                                 </li>
                                 <li className="nav-item dropdown navdesktop">
-                                    <Link className="nav-link " href="#" onMouseEnter={() => handleMouseEnter('services')} onMouseLeave={() => handleMouseLeave('services')}>
+                                    <Link className={`nav-link ${pathname === '#' ? 'active' : ''}`} href="#" onMouseEnter={() => handleMouseEnter('services')} onMouseLeave={() => handleMouseLeave('services')}>
                                         Services <i className="ri-arrow-down-s-line"></i>
                                     </Link>
                                     <ul className={`dropdown-menu ${isHover.services ? 'show' : ''}`}
@@ -120,6 +127,7 @@ const Header = () => {
                     </div>
                 </nav>
             </header>
+            <OffCanvas show={offcanvasShow} handleClose={handleClose} pathname={pathname} />
         </>
     )
 }

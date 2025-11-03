@@ -20,8 +20,8 @@ const Footer = () => {
                 </div>
                 <hr />
                 <div className="row pb-2 pt-4">
-                    <div className="col-xl-3 col-lg-3 col-md-6">
-                        <div className="footer-links ">
+                    <div className="col-xl-3 col-lg-3 col-md-6 col-6">
+                        <div className="footer-links">
                             <h6>Quick Links</h6>
                             <ul className="list-unstyled">
                                 <li><Link href="/">Home</Link></li>
@@ -31,8 +31,8 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-xl-3 col-lg-3 col-md-6">
-                        <div className="footer-links ">
+                    <div className="col-xl-3 col-lg-3 col-md-6 col-6">
+                        <div className="footer-links">
                             <h6>Services</h6>
                             <ul className="list-unstyled">
                                 <li><Link href="/">eBook Writing</Link></li>
@@ -44,8 +44,8 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-xl-3 col-lg-3 col-md-6">
-                        <div className="footer-links ">
+                    <div className="col-xl-3 col-lg-3 col-md-6 col-6">
+                        <div className="footer-links mb-0">
                             <h6>Genre</h6>
                             <ul className="list-unstyled">
                                 <li><Link href="/">Autobiography</Link> </li>
@@ -58,8 +58,8 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-xl-3 col-lg-3 col-md-6">
-                        <div className="footer-links ">
+                    <div className="col-xl-3 col-lg-3 col-md-6 col-6">
+                        <div className="footer-links mb-0">
                             <h6>Reach Us</h6>
                             <ul className="list-unstyled">
                                 <li><Link className="d-flex align-items-center justify-content-lg-start justify-content-center gap-2" href="tel:+123456789"><i className="ri-smartphone-line"></i> +1234567890</Link></li>
@@ -72,7 +72,7 @@ const Footer = () => {
                 <div className="row align-items-center mt-0 pt-2 pb-2">
                     <div className="col-xl-6 col-lg-7 col-md-12">
                         <div className="footer-bootom-links">
-                            <span>Copyright © 2025 . Website Name . All Rights Reserved</span>
+                            <p>Copyright © 2025 . Website Name . All Rights Reserved</p>
 
                         </div>
                     </div>
