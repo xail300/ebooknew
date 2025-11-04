@@ -43,7 +43,7 @@ export default function Home() {
             </div>
             <div className="col-xl-5 col-lg-5 col-md-6">
               <div className="center text-center">
-                <Image src="/assets/images/img-2.png" alt="" fill sizes="(max-width: 767px) 100vw, 33vw" />
+                <Image src="/assets/images/img-2.png" alt="" fill sizes="(max-width: 767px) 100vw" />
               </div>
             </div>
             <div className="col-xl-3 col-lg-3 col-md-6">
