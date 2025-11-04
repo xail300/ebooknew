@@ -1,13 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
-import BannerSec from "../components/BannerSec";
-import SectionTitle from "../components/SectionTitle";
+import BannerSec from "../_components/BannerSec";
+import SectionTitle from "../_components/SectionTitle";
 import { services } from "../lib/servicesData";
-import Faqs from "../components/Faqs";
-import GetQuote from "../components/GetQuote";
-import MapLeftInner from "../components/MapLeftInner";
-import MapRightInner from "../components/MapRightInner";
-import Button from "../components/Button";
+import Faqs from "../_components/Faqs";
+import GetQuote from "../_components/GetQuote";
+import MapLeftInner from "../_components/MapLeftInner";
+import MapRightInner from "../_components/MapRightInner";
+import Button from "../_components/Button";
+import FullImage from "../_components/FullImage";
+import TopContent from "../_components/TopContent";
+
+export const metadata = {
+  title: "Home",
+  // description: "Home",
+};
 
 export default function Home() {
 
@@ -18,11 +25,7 @@ export default function Home() {
         <div className="container">
           <div className="row justify-content-center align-items-center">
             <div className="col-xl-6 col-lg-6 col-md-12">
-              <div className="center-col">
-                <h1>Professional <span>EBook</span> Writing Services</h1>
-                <p className="mb-4">Avail the best ghost-writing services from our affordable self-publishing ghostwriting agency. We are experts in creating fiction, non-fiction, mysteries.</p>
-                <Button />
-              </div>
+              <TopContent someHeadingOne="Professional" someHeadingTwo="Writing Services" spanTitle="EBook" desc="Avail the best ghost-writing services from our affordable self-publishing ghostwriting agency. We are experts in creating fiction, non-fiction, mysteries." />
             </div>
           </div>
           <div className="row justify-content-between">
@@ -141,7 +144,7 @@ export default function Home() {
                 <h3>AUTHOR  & COLLABORATION HUB</h3>
                 <p>Join a growing network of writers, creators, and digital publishers.</p>
                 <div className="sec-sub-inner mt-5">
-                  <Image src="/assets/images/img-6.png" alt="" fill sizes="(max-width: 767px) 100vw"/>
+                  <Image src="/assets/images/img-6.png" alt="" fill sizes="(max-width: 767px) 100vw" />
                 </div>
               </div>
             </div>
@@ -301,17 +304,7 @@ export default function Home() {
       </section>
       {/* end */}
       {/* full image */}
-      <section className="full-img p-0 overflow-hidden">
-        <div className="container-fluid px-0">
-          <div className="row">
-            <div className="col-xl-12 col-lg-12 col-md-12">
-              <div className="full-img-body">
-                <Image src="/assets/images/full-img.png" alt="" fill sizes="(max-width: 767px) 100vw" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <FullImage />
       {/* end */}
       {/* faqs */}
       <Faqs />

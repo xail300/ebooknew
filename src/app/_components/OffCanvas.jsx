@@ -27,10 +27,10 @@ const OffCanvas = ({ show, handleClose, pathname }) => {
                 <Offcanvas.Body>
                     <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li className="nav-item">
-                            <Link className={`nav-link ${pathname === '/' ? 'active' : ''}`} href="#">Home</Link>
+                            <Link className={`nav-link ${pathname === '/' ? 'active' : ''}`} href="/">Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link " href="#">About Us</Link>
+                            <Link className={`nav-link ${pathname === '/about-us' ? 'active' : ''}`} href="about-us">About Us</Link>
                         </li>
                         <li className="nav-item dropdown">
                             <Link className="nav-link " href="#" onClick={() => handleToggleDropdown('editingServices')}>

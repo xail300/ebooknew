@@ -3,8 +3,8 @@ import { Archivo } from "next/font/google";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../globals.css";
 import 'remixicon/fonts/remixicon.css'
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../_components/Header";
+import Footer from "../_components/Footer";
 import { ModalProvider } from "../context/ModalContext";
 
 
@@ -20,14 +20,9 @@ const archivo = Archivo({
   display: "swap",
 });
 
-export const metadata = {
-  title: "Home - Ebook Editing Services",
-  description: "Home - Ebook Editing Services",
-};
-
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <body className={`${delaGothic.className} ${archivo.className}`}>
         <ModalProvider>
           <Header />

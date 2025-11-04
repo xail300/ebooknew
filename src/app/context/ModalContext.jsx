@@ -1,6 +1,6 @@
 'use client'
 import { createContext, useContext, useState } from "react";
-import CustomModal from "@/app/components/Modal";
+import CustomModal from "@/app/_components/Modal";
 
 const ModalContext = createContext();
 

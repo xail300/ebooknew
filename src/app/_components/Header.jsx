@@ -61,6 +61,12 @@ const Header = () => {
     const pathname = usePathname();
     // end
 
+    // hide offcanvas when click
+    useEffect(() => {
+        setOffcanvasShow(false);
+    }, [pathname])
+    // end
+
     return (
         <>
             <header className={`header ${isSticky ? 'sticky' : ''}`}>
@@ -79,7 +85,7 @@ const Header = () => {
                                     <Link className={`nav-link ${pathname === '/' ? 'active' : ''}`} href="/">Home</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link " href="about-us">About Us</Link>
+                                    <Link className={`nav-link ${pathname === '/about-us' ? 'active' : ''}`} href="about-us">About Us</Link>
                                 </li>
                                 <li className="nav-item dropdown navdesktop">
                                     <Link className={`nav-link ${pathname === '#' ? 'active' : ''}`} href="#" onMouseEnter={() => handleMouseEnter('services')} onMouseLeave={() => handleMouseLeave('services')}>
@@ -127,7 +133,7 @@ const Header = () => {
                     </div>
                 </nav>
             </header>
-            <OffCanvas show={offcanvasShow} handleClose={handleClose} pathname={pathname} />
+            {offcanvasShow && <OffCanvas show={offcanvasShow} handleClose={handleClose} pathname={pathname} />}
         </>
     )
 }
