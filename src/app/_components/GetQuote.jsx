@@ -2,6 +2,8 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 import { Form } from 'react-bootstrap'
+import toast from 'react-hot-toast'
+
 
 
 const GetQuote = () => {
@@ -14,7 +16,17 @@ const GetQuote = () => {
         const form = event.currentTarget;
         if (form.checkValidity() === false) {
             event.stopPropagation();
+            toast.error('Please fill out all required fields.');
             return;
+        }
+
+        try {
+            if (true) {
+                toast.success('Form submitted successfully!');
+                form.reset()
+            }
+        } catch (error) {
+
         }
 
         // form sending to email

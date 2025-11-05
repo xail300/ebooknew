@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { Form, Modal } from 'react-bootstrap';
 import { useModal } from '../context/ModalContext';
+import toast from 'react-hot-toast';
 
 
 const CustomModal = () => {
@@ -17,11 +18,12 @@ const CustomModal = () => {
         const form = event.currentTarget;
         if (form.checkValidity() === false) {
             event.stopPropagation();
+            toast.error('Please fill out all required fields.');
             return;
         }
 
         // form sending to email
-        const formData = new FormData(form);
+        // const formData = new FormData(form);
         // await sendMail(formData);
         // end
     };

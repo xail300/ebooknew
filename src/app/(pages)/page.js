@@ -166,7 +166,7 @@ export default function Home() {
                     <p className="mb-0">From scattered sparks to sharp results.</p>
                   </div>
                   <div className="btn-contact">
-                    <Link href="/"><span><i className="ri-add-large-line"></i> Contact us</span></Link>
+                    <Link href="/contact-us"><span><i className="ri-add-large-line"></i> Contact us</span></Link>
                   </div>
                 </div>
               </div>

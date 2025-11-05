@@ -85,7 +85,7 @@ const Header = () => {
                                     <Link className={`nav-link ${pathname === '/' ? 'active' : ''}`} href="/">Home</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className={`nav-link ${pathname === '/about-us' ? 'active' : ''}`} href="about-us">About Us</Link>
+                                    <Link className={`nav-link ${pathname === '/about-us' ? 'active' : ''}`} href="/about-us">About Us</Link>
                                 </li>
                                 <li className="nav-item dropdown navdesktop">
                                     <Link className={`nav-link ${pathname === '#' ? 'active' : ''}`} href="#" onMouseEnter={() => handleMouseEnter('services')} onMouseLeave={() => handleMouseLeave('services')}>
@@ -94,12 +94,12 @@ const Header = () => {
                                     <ul className={`dropdown-menu ${isHover.services ? 'show' : ''}`}
                                         onMouseEnter={() => handleMouseEnter('services')}
                                         onMouseLeave={() => handleMouseLeave('services')} aria-labelledby="navbarDropdown">
-                                        <li><Link className="dropdown-item" href="ebook-writing">eBook Writing</Link></li>
-                                        <li><Link className="dropdown-item" href="ebook-editing">eBook Editing</Link></li>
-                                        <li><Link className="dropdown-item" href="ebook-marketing">eBook Marketing</Link></li>
-                                        <li><Link className="dropdown-item" href="ebook-publishing">eBook Publishing</Link></li>
-                                        <li><Link className="dropdown-item" href="ebook-cover">eBook Cover</Link></li>
-                                        <li><Link className="dropdown-item" href="children-book">Children Book</Link></li>
+                                        <li><Link className="dropdown-item" href="/ebook-writing">eBook Writing</Link></li>
+                                        <li><Link className="dropdown-item" href="/ebook-editing">eBook Editing</Link></li>
+                                        <li><Link className="dropdown-item" href="/ebook-marketing">eBook Marketing</Link></li>
+                                        <li><Link className="dropdown-item" href="/ebook-publishing">eBook Publishing</Link></li>
+                                        <li><Link className="dropdown-item" href="/ebook-cover">eBook Cover</Link></li>
+                                        <li><Link className="dropdown-item" href="/children-book">Children Book</Link></li>
                                     </ul>
                                 </li>
                                 <li className="nav-item dropdown">
@@ -110,17 +110,17 @@ const Header = () => {
                                         onMouseEnter={() => handleMouseEnter('genre')}
                                         onMouseLeave={() => handleMouseLeave('genre')}
                                         aria-labelledby="navbarDropdown">
-                                        <li><Link className="dropdown-item" href="autobiography">Autobiography</Link> </li>
-                                        <li><Link className="dropdown-item" href="business">Business</Link></li>
-                                        <li><Link className="dropdown-item" href="fiction">Fiction</Link> </li>
-                                        <li><Link className="dropdown-item" href="mystery-book">Mystery Book</Link></li>
-                                        <li><Link className="dropdown-item" href="non-fiction">Non-Fiction</Link></li>
-                                        <li><Link className="dropdown-item" href="novel-writing">Novel Writing</Link> </li>
-                                        <li><Link className="dropdown-item" href="self-help">Self Help</Link></li>
+                                        <li><Link className="dropdown-item" href="/autobiography">Autobiography</Link> </li>
+                                        <li><Link className="dropdown-item" href="/business">Business</Link></li>
+                                        <li><Link className="dropdown-item" href="/fiction">Fiction</Link> </li>
+                                        <li><Link className="dropdown-item" href="/mystery-book">Mystery Book</Link></li>
+                                        <li><Link className="dropdown-item" href="/non-fiction">Non-Fiction</Link></li>
+                                        <li><Link className="dropdown-item" href="/novel-writing">Novel Writing</Link> </li>
+                                        <li><Link className="dropdown-item" href="/self-help">Self Help</Link></li>
                                     </ul>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link " href="#">
+                                    <Link className={`nav-link ${pathname === '/contact-us' ? 'active' : ''}`} href="/contact-us">
                                         Contact Us
                                     </Link>
                                 </li>

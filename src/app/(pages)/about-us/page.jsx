@@ -21,7 +21,7 @@ const About = () => {
             <div className="col-xl-6 col-lg-6 col-md-6">
               <TopContent someHeadingOne="About" someHeadingTwo="" spanTitle="US" desc="Avail the best ghost-writing services from our affordable self-publishing ghostwriting agency. We are experts in creating fiction, non-fiction, mysteries." />
             </div>
-            <div className="col-xl-5 col-lg-5 col-md-5">
+            <div className="col-xl-4 col-lg-4 col-md-4">
               <div className="img-right">
                 <Image src="/assets/images/img-10.png" alt="" fill sizes="(max-width: 767px) 100vw"></Image>
               </div>
@@ -52,7 +52,7 @@ const About = () => {
       {/* inner two */}
       <section className="inner-sec-two">
         <div className="container">
-          <div className="row">
+          <div className="row g-3">
             <div className="col-xl-4 col-lg-4 col-md-4">
               <div className="sec-two-box">
                 <Image src="/assets/images/icon-1.png" alt="" width={100} height={100}></Image>

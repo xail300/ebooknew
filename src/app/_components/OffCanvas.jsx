@@ -30,34 +30,33 @@ const OffCanvas = ({ show, handleClose, pathname }) => {
                             <Link className={`nav-link ${pathname === '/' ? 'active' : ''}`} href="/">Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className={`nav-link ${pathname === '/about-us' ? 'active' : ''}`} href="about-us">About Us</Link>
+                            <Link className={`nav-link ${pathname === '/about-us' ? 'active' : ''}`} href="/about-us">About Us</Link>
                         </li>
                         <li className="nav-item dropdown">
                             <Link className="nav-link " href="#" onClick={() => handleToggleDropdown('editingServices')}>
-                                Editing Services <i className="ri-arrow-down-s-line"></i>
+                                Services <i className="ri-arrow-down-s-line"></i>
                             </Link>
                             <ul className={`dropdown-menu ${openDropdown.editingServices ? 'show' : ''}`} aria-labelledby="navbarDropdown">
-                                <li><Link className="dropdown-item" href="premium-editing">Premium Editing</Link></li>
-                                <li><Link className="dropdown-item" href="copy-editing">Copy Editing</Link></li>
-                                <li><Link className="dropdown-item" href="proofreading">Proofreading</Link></li>
-                                <li><Link className="dropdown-item" href="quality-assurance">Quality Assurance</Link></li>
-                                <li><Link className="dropdown-item" href="substantive-editing">Substantive Editing</Link>
-                                </li>
+                                <li><Link className="dropdown-item" href="/ebook-writing">eBook Writing</Link></li>
+                                <li><Link className="dropdown-item" href="/ebook-editing">eBook Editing</Link></li>
+                                <li><Link className="dropdown-item" href="/ebook-marketing">eBook Marketing</Link></li>
+                                <li><Link className="dropdown-item" href="/ebook-publishing">eBook Publishing</Link></li>
+                                <li><Link className="dropdown-item" href="/ebook-cover">eBook Cover</Link></li>
+                                <li><Link className="dropdown-item" href="/children-book">Children Book</Link></li>
                             </ul>
                         </li>
                         <li className="nav-item dropdown">
                             <Link className="nav-link " href="#" onClick={() => handleToggleDropdown('ourServices')}>
-                                Our Services <i className="ri-arrow-down-s-line"></i>
+                                Genre <i className="ri-arrow-down-s-line"></i>
                             </Link>
                             <ul className={`dropdown-menu ${openDropdown.ourServices ? 'show' : ''}`} aria-labelledby="navbarDropdown">
-                                <li><Link className="dropdown-item" href="publication-support">Publication Support</Link> </li>
-                                <li><Link className="dropdown-item" href="journal-selection">Journal Selection</Link></li>
-                                <li><Link className="dropdown-item" href="pre-submission-review">Pre-Submission Review</Link> </li>
-                                <li><Link className="dropdown-item" href="formatting-and-artwork-editing">Formatting And Artwork
-                                    Editing</Link></li>
-                                <li><Link className="dropdown-item" href="journal-submission">Journal Submission</Link></li>
-                                <li><Link className="dropdown-item" href="resubmission-support">Resubmission Support</Link> </li>
-                                <li><Link className="dropdown-item" href="plagiarism-check">Plagiarism Check</Link></li>
+                                <li><Link className="dropdown-item" href="/autobiography">Autobiography</Link> </li>
+                                <li><Link className="dropdown-item" href="/business">Business</Link></li>
+                                <li><Link className="dropdown-item" href="/fiction">Fiction</Link> </li>
+                                <li><Link className="dropdown-item" href="/mystery-book">Mystery Book</Link></li>
+                                <li><Link className="dropdown-item" href="/non-fiction">Non-Fiction</Link></li>
+                                <li><Link className="dropdown-item" href="/novel-writing">Novel Writing</Link> </li>
+                                <li><Link className="dropdown-item" href="/self-help">Self Help</Link></li>
                             </ul>
                         </li>
                         <li className="nav-item">

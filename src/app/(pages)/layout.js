@@ -6,6 +6,7 @@ import 'remixicon/fonts/remixicon.css'
 import Header from "../_components/Header";
 import Footer from "../_components/Footer";
 import { ModalProvider } from "../context/ModalContext";
+import { Toaster } from "react-hot-toast";
 
 
 const delaGothic = Dela_Gothic_One({
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
         <ModalProvider>
           <Header />
           {children}
+          <Toaster position="top-right" reverseOrder={false} />
           <Footer />
         </ModalProvider>
       </body>
