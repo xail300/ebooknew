@@ -1,15 +1,18 @@
 'use client'
 import { useEffect, useState } from 'react'
 import { Form } from 'react-bootstrap'
+import { auth, db } from '../lib/firebase'
+import { doc, getDoc, updateDoc } from 'firebase/firestore'
+import { signInWithEmailAndPassword } from 'firebase/auth'
 
 export default function AdminPage() {
     const [isLoggedIn, setIsLoggedIn] = useState(false)
-    const [loginData, setLoginData] = useState({ username: '', password: '' })
+    const [loginData, setLoginData] = useState({ email: '', password: '' })
     const [contact, setContact] = useState({
         number: '',
         whatsapp: '',
         email: '',
-        showNumber: true,     
+        showNumber: true,
         showWhatsapp: true,
         showEmail: true
     })
@@ -20,26 +23,37 @@ export default function AdminPage() {
         const fetchData = async () => {
             if (isLoggedIn) {
                 try {
-                    const res = await fetch('/api/contact')
-                    const data = await res.json()
-                    setContact(data)
+                    const docRef = doc(db, 'contactInfo', 'lV6n5h68qhRCJ48y6iaV')
+                    const docSnap = await getDoc(docRef)
+                    if (docSnap.exists()) {
+                        setContact(docSnap.data())
+                    } else {
+                        console.log("No such document!")
+                    }
                 } catch (error) {
                     console.error("Error fetching data:", error)
                 }
             }
         }
-
         fetchData()
     }, [isLoggedIn])
 
 
-    const handleLogin = (e) => {
+    const handleLogin = async (e) => {
         e.preventDefault()
-        if (loginData.username === 'admin' && loginData.password === 'admin123') {
+        setMessage('');
+
+        const { email, password } = loginData;
+        if (!email || !password) {
+            setMessage('Please enter both email and password');
+            return;
+        }
+
+        try {
+            await signInWithEmailAndPassword(auth, email, password)
             setIsLoggedIn(true)
-            setMessage('')
-        } else {
-            setMessage('Invalid credentials')
+        } catch (error) {
+            setMessage('invalid email or password')
         }
     }
 
@@ -47,20 +61,15 @@ export default function AdminPage() {
         e.preventDefault()
         setLoading(true)
         setMessage('')
-
-        const res = await fetch('/api/contact', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                ...contact,
-                username: loginData.username,
-                password: loginData.password
-            })
-        })
-
-        const result = await res.json()
+        try {
+            const docRef = doc(db, "contactInfo", "lV6n5h68qhRCJ48y6iaV")
+            await updateDoc(docRef, contact)
+            setMessage('Contact information updated successfully')
+        } catch (error) {
+            console.error("Error updating document:", error)
+            setMessage('Error updating contact information')
+        }
         setLoading(false)
-        setMessage(result.message)
     }
 
     if (!isLoggedIn) {
@@ -73,12 +82,12 @@ export default function AdminPage() {
                             <Form onSubmit={handleLogin}>
                                 <div className="mb-3">
                                     <Form.Control
-                                        type="text"
-                                        placeholder="Username"
-                                        value={loginData.username}
-                                        id='name'
+                                        type="email"
+                                        placeholder="Email"
+                                        value={loginData.email}
+                                        id='email'
                                         autoComplete="off"
-                                        onChange={e => setLoginData({ ...loginData, username: e.target.value })}
+                                        onChange={e => setLoginData({ ...loginData, email: e.target.value })}
                                     />
                                 </div>
                                 <div className="mb-3">
