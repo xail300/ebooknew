@@ -1,5 +1,6 @@
 import Link from "next/link"
 import contact from '../../../data/contact.json'
+import ContactSection from "./ContactInfo"
 
 const Footer = () => {
     return (
@@ -61,11 +62,7 @@ const Footer = () => {
                     <div className="col-xl-3 col-lg-3 col-md-6 col-6">
                         <div className="footer-links mb-0">
                             <h6>Reach Us</h6>
-                            <ul className="list-unstyled">
-                                {contact.showNumber && <li><Link className="d-flex align-items-center justify-content-lg-start justify-content-center gap-2" href={`tel:${contact.number}`}><i className="ri-smartphone-line"></i>{contact.number}</Link></li>}
-                                {contact.showWhatsapp && <li><Link className="d-flex align-items-center justify-content-lg-start justify-content-center gap-2" href={`tel:${contact.whatsapp}`}><i className="ri-whatsapp-line"></i>{contact.whatsapp}</Link></li>}
-                                {contact.showEmail && <li><Link className="d-flex align-items-center justify-content-lg-start justify-content-center gap-2" href={`mailto:${contact.email}`}><i className="ri-mail-line"></i> {contact.email}</Link></li>}
-                            </ul>
+                            <ContactSection />
                         </div>
                     </div>
                 </div>
