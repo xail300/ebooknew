@@ -1,5 +1,4 @@
 import Link from "next/link"
-import contact from '../../../data/contact.json'
 import ContactSection from "./ContactInfo"
 
 const Footer = () => {

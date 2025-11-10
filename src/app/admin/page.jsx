@@ -42,7 +42,6 @@ export default function AdminPage() {
     const handleLogin = async (e) => {
         e.preventDefault()
         setMessage('');
-
         const { email, password } = loginData;
         if (!email || !password) {
             setMessage('Please enter both email and password');

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import BannerSec from "../_components/BannerSec";
 import SectionTitle from "../_components/SectionTitle";
-import { services } from "../lib/servicesData";
+import { services } from "../../data/servicesData";
 import Faqs from "../_components/Faqs";
 import GetQuote from "../_components/GetQuote";
 import MapLeftInner from "../_components/MapLeftInner";
@@ -10,6 +10,8 @@ import MapRightInner from "../_components/MapRightInner";
 import Button from "../_components/Button";
 import FullImage from "../_components/FullImage";
 import TopContent from "../_components/TopContent";
+import { roadMapInner, roadMapInnerData } from "@/data/roadMapInnerData";
+import { faqsContent } from "@/data/faqsContent";
 
 export const metadata = {
   title: "Home",
@@ -273,7 +275,7 @@ export default function Home() {
           </div>
           <div className="road-map-body">
             <div className="road-map-left">
-              <MapLeftInner />
+              <MapLeftInner items={roadMapInnerData.leftInner}/>
             </div>
             <div className="road-map-center d-md-block d-none">
               <div className="shape">
@@ -297,7 +299,7 @@ export default function Home() {
               </div>
             </div>
             <div className="road-map-right">
-              <MapRightInner />
+              <MapRightInner items={roadMapInnerData.rightInner}/>
             </div>
           </div>
         </div>
@@ -307,7 +309,7 @@ export default function Home() {
       <FullImage />
       {/* end */}
       {/* faqs */}
-      <Faqs />
+      <Faqs items={faqsContent.home}/>
       {/* end */}
       {/* get quote */}
       <GetQuote />

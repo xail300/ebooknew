@@ -670,7 +670,7 @@ header.sticky img {
 
 /* road-map */
 .road-map {
-  padding: 40px 0 0;
+  padding: 40px 0;
 }
 
 .road-map .road-map-body {
@@ -991,6 +991,66 @@ header.sticky img {
 }
 
 /* end */
+
+/* slider sec */
+.slider-sec {
+  padding: 40px 0 80px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.slider-sec .slider-inner .slider-box {
+  padding: 0px 10px;
+}
+
+.slider-sec .slider-inner .slider-box img {
+  width: 100%;
+  margin: auto;
+}
+
+/* slick navigation */
+.slider-sec .slider-inner .slick-next,
+.slider-sec .slider-inner .slick-prev {
+  width: 45px !important;
+  height: 45px !important;
+}
+
+.slider-sec .slider-inner .slick-dots {
+  bottom: -60px;
+}
+
+.slider-sec .slider-inner .slick-dots li.slick-active button:before {
+  opacity: 1;
+  font-size: 0;
+  background: white;
+  border-radius: 12px;
+  height: 7px;
+  width: 20px;
+}
+
+.slider-sec .slider-inner .slick-dots li button:before {
+  font-size: 0;
+  background: white;
+  border-radius: 12px;
+  height: 7px;
+  width: 8px;
+  opacity: 1;
+}
+
+.slider-sec::after {
+  content: "";
+  background-color: #B2C804;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 145px;
+  width: 100%;
+  z-index: -1;
+}
+
+/* end */
+
+
 /* form */
 /* Works for Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,

@@ -110,13 +110,13 @@ const Header = () => {
                                         onMouseEnter={() => handleMouseEnter('genre')}
                                         onMouseLeave={() => handleMouseLeave('genre')}
                                         aria-labelledby="navbarDropdown">
-                                        <li><Link className="dropdown-item" href="/autobiography">Autobiography</Link> </li>
-                                        <li><Link className="dropdown-item" href="/business">Business</Link></li>
-                                        <li><Link className="dropdown-item" href="/fiction">Fiction</Link> </li>
-                                        <li><Link className="dropdown-item" href="/mystery-book">Mystery Book</Link></li>
-                                        <li><Link className="dropdown-item" href="/non-fiction">Non-Fiction</Link></li>
-                                        <li><Link className="dropdown-item" href="/novel-writing">Novel Writing</Link> </li>
-                                        <li><Link className="dropdown-item" href="/self-help">Self Help</Link></li>
+                                        <li><Link className="dropdown-item" href="/genre/autobiography">Autobiography</Link> </li>
+                                        <li><Link className="dropdown-item" href="/genre/business">Business</Link></li>
+                                        <li><Link className="dropdown-item" href="/genre/fiction">Fiction</Link> </li>
+                                        <li><Link className="dropdown-item" href="/genre/mystery-book">Mystery Book</Link></li>
+                                        <li><Link className="dropdown-item" href="/genre/non-fiction">Non-Fiction</Link></li>
+                                        <li><Link className="dropdown-item" href="/genre/novel-writing">Novel Writing</Link> </li>
+                                        <li><Link className="dropdown-item" href="/genre/self-help">Self Help</Link></li>
                                     </ul>
                                 </li>
                                 <li className="nav-item">

@@ -2,8 +2,13 @@ import Button from '@/app/_components/Button'
 import Faqs from '@/app/_components/Faqs'
 import FullImage from '@/app/_components/FullImage'
 import GetQuote from '@/app/_components/GetQuote'
+import InnerSecFive from '@/app/_components/InnerSecFive'
+import InnerSecTwo from '@/app/_components/InnerSecTwo'
 import SectionTitle from '@/app/_components/SectionTitle'
 import TopContent from '@/app/_components/TopContent'
+import { faqsContent } from '@/data/faqsContent'
+import { innerFiveData } from '@/data/innerFiveData'
+import { innerSecTwoData } from '@/data/innerSecTwoData'
 import Image from 'next/image'
 
 export const metadata = {
@@ -50,33 +55,7 @@ const About = () => {
       </section>
       {/* end */}
       {/* inner two */}
-      <section className="inner-sec-two">
-        <div className="container">
-          <div className="row g-3">
-            <div className="col-xl-4 col-lg-4 col-md-4">
-              <div className="sec-two-box">
-                <Image src="/assets/images/icon-1.png" alt="" width={100} height={100}></Image>
-                <h3>Urna ut tortor</h3>
-                <p>Sit laoreet aliquam nec mauris mattis adr afara hac. Felis euismod eget mus pellentesque morbi non feugiat. Id id sed at nibh. Urna ut tortor adipiscing aliquet id vulputate blandit et. In sed commodo est varius sociis. Sit pretium</p>
-              </div>
-            </div>
-            <div className="col-xl-4 col-lg-4 col-md-4">
-              <div className="sec-two-box">
-                <Image src="/assets/images/icon-1.png" alt="" width={100} height={100}></Image>
-                <h3>Urna ut tortor</h3>
-                <p>Sit laoreet aliquam nec mauris mattis adr afara hac. Felis euismod eget mus pellentesque morbi non feugiat. Id id sed at nibh. Urna ut tortor adipiscing aliquet id vulputate blandit et. In sed commodo est varius sociis. Sit pretium</p>
-              </div>
-            </div>
-            <div className="col-xl-4 col-lg-4 col-md-4">
-              <div className="sec-two-box">
-                <Image src="/assets/images/icon-1.png" alt="" width={100} height={100}></Image>
-                <h3>Urna ut tortor</h3>
-                <p>Sit laoreet aliquam nec mauris mattis adr afara hac. Felis euismod eget mus pellentesque morbi non feugiat. Id id sed at nibh. Urna ut tortor adipiscing aliquet id vulputate blandit et. In sed commodo est varius sociis. Sit pretium</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <InnerSecTwo items={innerSecTwoData.about} />
       {/* end */}
       {/* meet sec */}
       <section className="meet-sec">
@@ -138,22 +117,7 @@ const About = () => {
             </div>
           </div>
           <div className="inner-five-body">
-            <div className="inner-five-inner">
-              <h4>Our Creative Thinking & Mission</h4>
-              <p>Embracing SMBs or startups by reinforcing technologies and trends with the utmost efficiency. Our mission is to turn common thinking into creative thinking by implementing the digital footprint for business brands' future.</p>
-            </div>
-            <div className="inner-five-inner">
-              <h4>Our Vision - Augmenting Creativity & Digitalization</h4>
-              <p>We want to move ahead with creativity, technology, and digitalization that attracts the end-users and uplifts our client’s business. We’ll evolve enterprises with our greatest expertise that turns your ordinary business into a giant entity among competitors.</p>
-            </div>
-            <div className="inner-five-inner">
-              <h4>Our Values - Evolving Better & Bold</h4>
-              <p>We live with the vision of improving learning, integrity, and transparency. This means giving our workplace healthy working environments, hunting talent that matches our vibe and building long-term client relationships with businesses.</p>
-            </div>
-            <div className="inner-five-inner">
-              <h4>Our Assets - Unbeatable and Trustworthy</h4>
-              <p>We focus on brand design, brand development, identity, creative services, website development, application development, and more. To ensure the quality of our services, we have precious assets, i.e., our proficient team—the secret behind our creative approach.</p>
-            </div>
+            <InnerSecFive items={innerFiveData.about}/>
           </div>
         </div>
       </section>
@@ -162,7 +126,7 @@ const About = () => {
       <FullImage />
       {/* end */}
       {/* faqs */}
-      <Faqs />
+      <Faqs items={faqsContent.home} />
       {/* end */}
       {/* get quote */}
       <GetQuote />
