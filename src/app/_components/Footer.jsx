@@ -1,12 +1,13 @@
 import Link from "next/link"
 import ContactSection from "./ContactInfo"
+import { Col, Container, Row } from "react-bootstrap"
 
 const Footer = () => {
     return (
         <footer className="footer">
-            <div className="container">
-                <div className="row justify-content-center">
-                    <div className="col-xl-5 col-lg-4 col-md-12">
+            <Container>
+                <Row className="justify-content-center">
+                    <Col xl={5} lg={4} md={12}>
                         <div className="footer-logo text-center">
                             <Link href="/"><img src="/assets/images/logo.png" /></Link>
                             <p>Lorem ipsum dolor sit amet consectetur. Purus amet lectus porttitor donec facilisi. Tristique mauris lacus nulla elementum faucibus sit eget ut et.</p>
@@ -16,11 +17,11 @@ const Footer = () => {
                                 <Link target="_blank" aria-label="Instagram" href="#"><i className="ri-linkedin-box-line"></i></Link>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </Col>
+                </Row>
                 <hr />
-                <div className="row pb-2 pt-4">
-                    <div className="col-xl-3 col-lg-3 col-md-6 col-6">
+                <Row className="pb-2 pt-4">
+                    <Col xl={3} lg={3} md={6}>
                         <div className="footer-links">
                             <h6>Quick Links</h6>
                             <ul className="list-unstyled">
@@ -30,8 +31,8 @@ const Footer = () => {
                                 <li><Link href="/">Contact Us</Link></li>
                             </ul>
                         </div>
-                    </div>
-                    <div className="col-xl-3 col-lg-3 col-md-6 col-6">
+                    </Col>
+                    <Col xl={3} lg={3} md={6}>
                         <div className="footer-links">
                             <h6>Services</h6>
                             <ul className="list-unstyled">
@@ -43,8 +44,8 @@ const Footer = () => {
                                 <li><Link href="/">Children Book</Link></li>
                             </ul>
                         </div>
-                    </div>
-                    <div className="col-xl-3 col-lg-3 col-md-6 col-6">
+                    </Col>
+                    <Col xl={3} lg={3} md={6}>
                         <div className="footer-links mb-0">
                             <h6>Genre</h6>
                             <ul className="list-unstyled">
@@ -57,32 +58,32 @@ const Footer = () => {
                                 <li><Link href="/">Self Help</Link></li>
                             </ul>
                         </div>
-                    </div>
-                    <div className="col-xl-3 col-lg-3 col-md-6 col-6">
+                    </Col>
+                    <Col xl={3} lg={3} md={6}>
                         <div className="footer-links mb-0">
                             <h6>Reach Us</h6>
                             <ContactSection />
                         </div>
-                    </div>
-                </div>
+                    </Col>
+                </Row>
                 <hr />
-                <div className="row align-items-center mt-0 pt-2 pb-2">
-                    <div className="col-xl-6 col-lg-7 col-md-12">
+                <Row className="align-items-center mt-0 pt-2 pb-2">
+                    <Col xl={6} lg={7} md={12}>
                         <div className="footer-bootom-links">
                             <p>Copyright © 2025 . Website Name . All Rights Reserved</p>
 
                         </div>
-                    </div>
-                    <div className="col-xl-6 col-lg-5 col-md-12">
+                    </Col>
+                    <Col xl={6} lg={5} md={12}>
                         <div className="other-links text-lg-end">
                             <p className="mb-0">
                                 <Link href="/">Terms &amp; Conditions</Link>
                                 <Link href="/">Privacy Policy </Link>
                             </p>
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </Col>
+                </Row>
+            </Container>
         </footer>
     )
 }

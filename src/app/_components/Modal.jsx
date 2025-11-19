@@ -1,6 +1,6 @@
 // import { sendMail } from '@/lib/sendEmail';
 import { useState } from 'react';
-import { Form, Modal } from 'react-bootstrap';
+import { Col, Form, Modal, Row } from 'react-bootstrap';
 import { useModal } from '../context/ModalContext';
 import toast from 'react-hot-toast';
 
@@ -39,26 +39,26 @@ const CustomModal = () => {
                         </div>
                         <hr />
                         <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                            <div className="row">
-                                <div className="col-md-12">
+                            <Row>
+                                <Col md={12}>
                                     <div className="mb-3">
                                         <Form.Label htmlFor="name">Name</Form.Label>
                                         <Form.Control required type="text" id="name" name='name' placeholder="Enter Name*" />
                                     </div>
-                                </div>
-                                <div className="col-md-12">
+                                </Col>
+                                <Col md={12}>
                                     <div className="mb-3">
                                         <Form.Label htmlFor="email">Email</Form.Label>
                                         <Form.Control required type="email" id="email" name='email' placeholder="Enter Email Address*" pattern="[^\s@]+@[a-zA-Z]+[^0-9@]+\.[cC][oO][mM]$" />
                                     </div>
-                                </div>
-                                <div className="col-md-12">
+                                </Col>
+                                <Col md={12}>
                                     <div className="mb-3">
                                         <Form.Label htmlFor="contact">Contact No.</Form.Label>
                                         <Form.Control type="number" id="contact" name="phone" placeholder="Enter Phone Number*" required />
                                     </div>
-                                </div>
-                                <div className="col-md-12">
+                                </Col>
+                                <Col md={12}>
                                     <div className="mb-3">
                                         <Form.Label htmlFor="service">Service</Form.Label>
                                         <Form.Select name="service" id="service" defaultValue="">
@@ -71,8 +71,8 @@ const CustomModal = () => {
                                             <option value="Children Book">Children Book</option>
                                         </Form.Select>
                                     </div>
-                                </div>
-                                <div className="col-md-12">
+                                </Col>
+                                <Col md={12}>
                                     <div className="mb-3">
                                         <Form.Label htmlFor="service">Genre</Form.Label>
                                         <Form.Select name="service" id="service" defaultValue="">
@@ -86,19 +86,19 @@ const CustomModal = () => {
                                             <option value="Self Help">Self Help</option>
                                         </Form.Select>
                                     </div>
-                                </div>
-                                <div className="col-md-12">
+                                </Col>
+                                <Col md={12}>
                                     <div className="mb-3">
                                         <Form.Label htmlFor="message">Message</Form.Label>
                                         <Form.Control as="textarea" id='message' rows={4} placeholder='Message' />
                                     </div>
-                                </div>
-                                <div className="col-md-12">
+                                </Col>
+                                <Col md={12}>
                                     <div className="mb-0">
                                         <button className="btn btn-theme">Submit</button>
                                     </div>
-                                </div>
-                            </div>
+                                </Col>
+                            </Row>
                         </Form>
                     </div>
 

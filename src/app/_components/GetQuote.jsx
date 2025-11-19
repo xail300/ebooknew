@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import React, { useState } from 'react'
-import { Form } from 'react-bootstrap'
+import { Col, Container, Form, Row } from 'react-bootstrap'
 import toast from 'react-hot-toast'
 
 
@@ -37,15 +37,15 @@ const GetQuote = () => {
 
     return (
         <section className="contact-us">
-            <div className="container">
+            <Container>
                 <div className="contact-bg">
-                    <div className="row align-items-center justify-content-between">
-                        <div className="col-xl-4 col-lg-4 col-md-5">
+                    <Row className="align-items-center justify-content-between">
+                        <Col xl={4} lg={4} md={5}>
                             <div className="contact-left">
                                 <Image src="/assets/images/contact-img.png" alt="" fill sizes="(max-width: 767px) 100vw, 33vw" />
                             </div>
-                        </div>
-                        <div className="col-xl-7 col-lg-7 col-md-7">
+                        </Col>
+                        <Col xl={7} lg={7} md={7}>
                             <Form noValidate validated={validated} onSubmit={handleSubmit}>
                                 <div className="row">
                                     <div className="col-md-6">
@@ -77,10 +77,10 @@ const GetQuote = () => {
                                     </div>
                                 </div>
                             </Form>
-                        </div>
-                    </div>
+                        </Col>
+                    </Row>
                 </div>
-            </div>
+            </Container>
         </section>
     )
 }

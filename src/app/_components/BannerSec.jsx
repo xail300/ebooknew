@@ -1,25 +1,26 @@
 import Image from "next/image"
 import Button from "./Button"
+import { Col, Container, Row } from "react-bootstrap"
 
 
 const BannerSec = () => {
     return (
         <section className="banner-sec">
-            <div className="container">
-                <div className="row justify-content-between">
-                    <div className="col-xl-6 col-lg-6 col-md-6">
+            <Container>
+                <Row className="justify-content-between">
+                    <Col xl={6} lg={6} md={6}>
                         <div className="left">
                             <h3>Looking to Create A Scalable Ebook Solution?</h3>
                             <Button />
                         </div>
-                    </div>
-                    <div className="col-xl-4 col-lg-4 col-md-4">
+                    </Col>
+                    <Col xl={4} lg={4} md={4}>
                         <div className="right">
-                           <Image src="/assets/images/img-7.png" alt="" width={392} height={390}/>
+                            <Image src="/assets/images/img-7.png" alt="" width={392} height={390} />
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </Col>
+                </Row>
+            </Container>
         </section>
     )
 }

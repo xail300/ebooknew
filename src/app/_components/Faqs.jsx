@@ -1,18 +1,18 @@
 'use client'
-import { Accordion } from "react-bootstrap"
+import { Accordion, Col, Container, Row } from "react-bootstrap"
 import SectionTitle from "./SectionTitle"
 
-const Faqs = ({items}) => {
+const Faqs = ({ items }) => {
     return (
         <section className="question-answer">
-            <div className="container">
-                <div className="row justify-content-center">
-                    <div className="col-xl-8 col-lg-8 col-md-10">
+            <Container>
+                <Row className="justify-content-center">
+                    <Col xl={8} lg={8} md={10}>
                         <SectionTitle smallHeading="FAQ" heading="THE PATH OF YOUR EBOOK" desc="A stealth-crafted ecosystem built for sustainability, utility, and long-term holder value." HeadingTag="h3" />
-                    </div>
-                </div>
-                <div className="row justify-content-center">
-                    <div className="col-xl-12 col-lg-12 col-md-12">
+                    </Col>
+                </Row>
+                <Row className="justify-content-center">
+                    <Col xl={12} lg={12} md={12}>
                         <div className="qa-sec">
                             <Accordion defaultActiveKey="0">
                                 {
@@ -27,9 +27,9 @@ const Faqs = ({items}) => {
                                 }
                             </Accordion>
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </Col>
+                </Row>
+            </Container>
         </section>
     )
 }

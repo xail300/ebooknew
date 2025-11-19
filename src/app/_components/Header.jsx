@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { useModal } from "../context/ModalContext";
 import OffCanvas from "./OffCanvas";
 import { usePathname } from "next/navigation";
+import { Container } from "react-bootstrap";
 
 const Header = () => {
 
@@ -71,7 +72,7 @@ const Header = () => {
         <>
             <header className={`header ${isSticky ? 'sticky' : ''}`}>
                 <nav className="navbar navbar-expand-xl navbar-dark stroke bg-transparent">
-                    <div className="container">
+                    <Container>
                         <Link className="navbar-brand" href="/">
                             <Image src="/assets/images/logo.png" alt="logo" width={75} height={21} />
                         </Link>
@@ -130,7 +131,7 @@ const Header = () => {
                             <button onClick={modalShow}
                                 className="btn btn-theme">Get Started </button>
                         </div>
-                    </div>
+                    </Container>
                 </nav>
             </header>
             {offcanvasShow && <OffCanvas show={offcanvasShow} handleClose={handleClose} pathname={pathname} />}

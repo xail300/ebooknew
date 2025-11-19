@@ -1,6 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react'
-import { Form } from 'react-bootstrap'
+import { Col, Container, Form, Row } from 'react-bootstrap'
 import { auth, db } from '../lib/firebase'
 import { doc, getDoc, updateDoc } from 'firebase/firestore'
 import { signInWithEmailAndPassword } from 'firebase/auth'
@@ -73,9 +73,9 @@ export default function AdminPage() {
 
     if (!isLoggedIn) {
         return (
-            <div className="container">
-                <div className="row justify-content-center">
-                    <div className="col-xl-5 col-lg-5 col-md-5">
+            <Container>
+                <Row className="justify-content-center">
+                    <Col xl={5} lg={5} md={5}>
                         <div className="admin-form">
                             <h2 className='text-center text-white'>ADMIN LOGIN</h2>
                             <Form onSubmit={handleLogin}>
@@ -103,16 +103,16 @@ export default function AdminPage() {
                                 <button type="submit" className="btn btn-theme w-100">Login</button>
                             </Form>
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </Col>
+                </Row>
+            </Container>
         )
     }
 
     return (
-        <div className="container">
-            <div className="row justify-content-center">
-                <div className="col-xl-5 col-lg-5 col-md-5">
+        <Container>
+            <Row className="justify-content-center">
+                <Col xl={5} lg={5} md={5}>
                     <div className="admin-form">
                         <Form onSubmit={handleSubmit}>
                             <h2 className='text-center text-white'>EDIT CONTACT INFORMATION</h2>
@@ -176,8 +176,8 @@ export default function AdminPage() {
                             </button>
                         </Form>
                     </div>
-                </div>
-            </div>
-        </div>
+                </Col>
+            </Row>
+        </Container>
     )
 }

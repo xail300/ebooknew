@@ -10,8 +10,9 @@ import MapRightInner from "../_components/MapRightInner";
 import Button from "../_components/Button";
 import FullImage from "../_components/FullImage";
 import TopContent from "../_components/TopContent";
-import { roadMapInner, roadMapInnerData } from "@/data/roadMapInnerData";
+import { roadMapInnerData } from "@/data/roadMapInnerData";
 import { faqsContent } from "@/data/faqsContent";
+import { Col, Container, Row } from "react-bootstrap";
 
 export const metadata = {
   title: "Home",
@@ -24,14 +25,14 @@ export default function Home() {
     <>
       {/* top banner */}
       <section className="top-banner">
-        <div className="container">
-          <div className="row justify-content-center align-items-center">
-            <div className="col-xl-6 col-lg-6 col-md-12">
+        <Container>
+          <Row className="justify-content-center align-items-center">
+            <Col xl={6} lg={6} md={12}>
               <TopContent someHeadingOne="Professional" someHeadingTwo="Writing Services" spanTitle="EBook" desc="Avail the best ghost-writing services from our affordable self-publishing ghostwriting agency. We are experts in creating fiction, non-fiction, mysteries." />
-            </div>
-          </div>
-          <div className="row justify-content-between">
-            <div className="col-xl-3 col-lg-3 col-md-6">
+            </Col>
+          </Row>
+          <Row className="justify-content-between">
+            <Col xl={3} lg={3} md={6}>
               <div className="left">
                 <Image src="/assets/images/img-1.png" alt="" width={299} height={351} />
                 <div className="overflow-sec">
@@ -42,13 +43,13 @@ export default function Home() {
                   <Image src="/assets/images/circle-img.png" alt="" width={62} height={62} />
                 </div>
               </div>
-            </div>
-            <div className="col-xl-5 col-lg-5 col-md-6">
+            </Col>
+            <Col xl={5} lg={5} md={6}>
               <div className="center text-center">
                 <Image src="/assets/images/img-2.png" alt="" fill sizes="(max-width: 767px) 100vw" />
               </div>
-            </div>
-            <div className="col-xl-3 col-lg-3 col-md-6">
+            </Col>
+            <Col xl={3} lg={3} md={6}>
               <div className="right">
                 <div className="number">
                   <span>500+</span>
@@ -63,19 +64,19 @@ export default function Home() {
                   <p>Books Created For Clients</p>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
       </section>
       {/* end */}
       {/* sec one */}
       <section className="sec-one overflow-hidden">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-xl-8 col-lg-8 col-md-10">
+        <Container>
+          <Row className="justify-content-center">
+            <Col xl={8} lg={8} md={10}>
               <SectionTitle smallHeading="features" heading="Lorem ipsum dolor sit amet, consec elit," />
-            </div>
-          </div>
+            </Col>
+          </Row>
           <div className="sec-one-body">
             <div className="sec-one-inner">
               <Image src="/assets/images/img-3.png" alt="" width={497} height={552} />
@@ -111,19 +112,19 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
       {/* end */}
       {/* sec two */}
       <section className="sec-two">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-xl-8 col-lg-8 col-md-10">
+        <Container>
+          <Row className="justify-content-center">
+            <Col xl={8} lg={8} md={10}>
               <SectionTitle smallHeading="features" heading="UNLOCK THE POWER OF YOUR STORY" desc="A stealth-crafted ecosystem built for sustainability, utility, and long-term holder value." HeadingTag="h3" />
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-xl-6 col-lg-6 col-md-6">
+            </Col>
+          </Row>
+          <Row>
+            <Col xl={6} lg={6} md={6}>
               <div className="sec-two-inner">
                 <h3>PROFESSIONAL EBOOK CREATION</h3>
                 <p>Every eBook is crafted to perfection — blending storytelling, visuals, and strategy for maximum impact. </p>
@@ -149,8 +150,8 @@ export default function Home() {
                   <Image src="/assets/images/img-6.png" alt="" fill sizes="(max-width: 767px) 100vw" />
                 </div>
               </div>
-            </div>
-            <div className="col-xl-6 col-lg-6 col-md-6">
+            </Col>
+            <Col xl={6} lg={6} md={6}>
               <div className="sec-two-inner">
                 <h3>DIGITAL DESIGN & VISUAL REWARDS</h3>
                 <p>Your story deserves to look as good as it reads. Our expert designers create stunning, scroll-stopping layouts </p>
@@ -177,9 +178,9 @@ export default function Home() {
                 <p>Start your journey with professional eBook design and unlock access to premium creative services and a community that values your vision.</p>
                 <Button />
               </div>
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
       </section>
       {/* end */}
       {/* banner sec */}
@@ -187,15 +188,15 @@ export default function Home() {
       {/* end */}
       {/* sec three */}
       <section className="sec-three">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-xl-8 col-lg-8 col-md-10">
+        <Container>
+          <Row className="justify-content-center">
+            <Col xl={8} lg={8} md={10}>
               <SectionTitle smallHeading="EBOOK EXPERIENCE" heading="THE DIGITAL STORY" desc="A design-driven ecosystem built for authors, creators, and entrepreneurs — focused on storytelling, creativity, and long-term brand growth." HeadingTag="h3" />
-            </div>
-          </div>
+            </Col>
+          </Row>
           <div className="bg-image">
-            <div className="row justify-content-center">
-              <div className="col-xl-3 col-lg-3 col-md-3">
+            <Row className="justify-content-center">
+              <Col xl={3} lg={3} md={3}>
                 <div className="left">
                   <div className="sec-three-inner">
                     <Image src="/assets/images/img-8.png" alt="" width={331} height={331} />
@@ -206,13 +207,13 @@ export default function Home() {
                     <span>Device-Optimized Reading Experience</span>
                   </div>
                 </div>
-              </div>
-              <div className="col-xl-4 col-lg-4 col-md-4">
+              </Col>
+              <Col xl={4} lg={4} md={4}>
                 <div className="center">
                   <Image src="/assets/images/mobile-img.png" alt="" fill sizes="(max-width: 767px) 100vw, 33vw" />
                 </div>
-              </div>
-              <div className="col-xl-3 col-lg-3 col-md-3">
+              </Col>
+              <Col xl={3} lg={3} md={3}>
                 <div className="right">
                   <div className="sec-three-inner">
                     <Image src="/assets/images/img-8.png" alt="" width={331} height={331} />
@@ -223,30 +224,30 @@ export default function Home() {
                     <span>Custom Brand Elements</span>
                   </div>
                 </div>
-              </div>
-            </div>
+              </Col>
+            </Row>
           </div>
-        </div>
+        </Container>
       </section>
       {/* end */}
       {/* service sec */}
       <section className="service-sec">
-        <div className="container">
-          <div className="row justify-content-between align-items-center">
-            <div className="col-xl-5 col-lg-5 col-md-5">
+        <Container>
+          <Row className="justify-content-between align-items-center">
+            <Col xl={5} lg={5} md={5}>
               <SectionTitle smallHeading="Service" heading="Solution we provide" HeadingTag="h3" />
-            </div>
-            <div className="col-xl-6 col-lg-6 col-md-6">
+            </Col>
+            <Col xl={6} lg={6} md={6}>
               <SectionTitle desc="Our team of hardworking individuals has always strived for perfection. We have helped many writers and authors to date to publish their masterpieces, edit their manusciripts for perfection" />
-            </div>
-          </div>
-          <div className="row justify-content-between align-items-center mt-md-5 mt-0">
-            <div className="col-xl-4 col-lg-4 col-md-4">
+            </Col>
+          </Row>
+          <Row className="justify-content-between align-items-center mt-md-5 mt-0">
+            <Col xl={4} lg={4} md={4}>
               <div className="left">
                 <Image src="/assets/images/img-9.png" alt="" fill sizes="(max-width: 767px) 100vw, 33vw" />
               </div>
-            </div>
-            <div className="col-xl-6 col-lg-6 col-md-6">
+            </Col>
+            <Col xl={6} lg={6} md={6}>
               <div className="right">
                 {
                   services?.map((items, i) => (
@@ -260,22 +261,22 @@ export default function Home() {
                   ))
                 }
               </div>
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
       </section>
       {/* end */}
       {/* road map */}
       <section className="road-map">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-xl-8 col-lg-8 col-md-10">
+        <Container>
+          <Row className="justify-content-center">
+            <Col xl={8} lg={8} md={10}>
               <SectionTitle smallHeading="Roadmap" heading="THE PATH OF YOUR EBOOK" desc="A step-by-step crafted process to transform your idea into a beautifully published eBook — ready for readers, stores, and success." HeadingTag="h3" />
-            </div>
-          </div>
+            </Col>
+          </Row>
           <div className="road-map-body">
             <div className="road-map-left">
-              <MapLeftInner items={roadMapInnerData.leftInner}/>
+              <MapLeftInner items={roadMapInnerData.leftInner} />
             </div>
             <div className="road-map-center d-md-block d-none">
               <div className="shape">
@@ -299,17 +300,17 @@ export default function Home() {
               </div>
             </div>
             <div className="road-map-right">
-              <MapRightInner items={roadMapInnerData.rightInner}/>
+              <MapRightInner items={roadMapInnerData.rightInner} />
             </div>
           </div>
-        </div>
+        </Container>
       </section>
       {/* end */}
       {/* full image */}
       <FullImage />
       {/* end */}
       {/* faqs */}
-      <Faqs items={faqsContent.home}/>
+      <Faqs items={faqsContent.home} />
       {/* end */}
       {/* get quote */}
       <GetQuote />

@@ -10,6 +10,7 @@ import { faqsContent } from '@/data/faqsContent'
 import { innerFiveData } from '@/data/innerFiveData'
 import { innerSecTwoData } from '@/data/innerSecTwoData'
 import Image from 'next/image'
+import { Col, Container, Row } from 'react-bootstrap'
 
 export const metadata = {
   title: "About Us",
@@ -21,37 +22,37 @@ const About = () => {
     <>
       {/* top banner */}
       <section className="top-banner inner-pages">
-        <div className="container">
-          <div className="row justify-content-between align-items-center">
-            <div className="col-xl-6 col-lg-6 col-md-6">
+        <Container>
+          <Row className="justify-content-between align-items-center">
+            <Col xl={6} lg={6} md={6}>
               <TopContent someHeadingOne="About" someHeadingTwo="" spanTitle="US" desc="Avail the best ghost-writing services from our affordable self-publishing ghostwriting agency. We are experts in creating fiction, non-fiction, mysteries." />
-            </div>
-            <div className="col-xl-4 col-lg-4 col-md-4">
+            </Col>
+            <Col xl={4} lg={4} md={4}>
               <div className="img-right">
                 <Image src="/assets/images/img-10.png" alt="" fill sizes="(max-width: 767px) 100vw"></Image>
               </div>
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
       </section>
       {/* end */}
       {/* inner one */}
       <section className="inner-sec-one">
-        <div className="container">
-          <div className="row justify-content-between align-items-center">
-            <div className="col-xl-6 col-lg-6 col-md-6">
+        <Container>
+          <Row className="justify-content-between align-items-center">
+            <Col xl={6} lg={6} md={6}>
               <div className="left">
                 <SectionTitle heading="Create Magical Stories" desc="Where innovation fuels success! Empower your business with tailor-made mobile apps designed to enhance performance, elevate user experience, and solidify your market presence. Our expertise spans industries like finance, retail, education, healthcare, and beyond." HeadingTag="h2" />
                 <Button />
               </div>
-            </div>
-            <div className="col-xl-5 col-lg-5 col-md-5">
+            </Col>
+            <Col xl={5} lg={5} md={5}>
               <div className="img-right">
                 <Image src="/assets/images/img-11.png" alt="" fill sizes="(max-width: 767px) 100vw"></Image>
               </div>
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
       </section>
       {/* end */}
       {/* inner two */}
@@ -59,13 +60,13 @@ const About = () => {
       {/* end */}
       {/* meet sec */}
       <section className="meet-sec">
-        <div className="container">
+        <Container>
           <div className="meet-sec-bg">
-            <div className="row justify-content-center">
-              <div className="col-xl-8 col-lg-8 col-md-10">
+            <Row className="justify-content-center">
+              <Col xl={8} lg={8} md={10}>
                 <SectionTitle heading="Meet Our Featured Authors - Discover Their Stories" HeadingTag="h3" />
-              </div>
-            </div>
+              </Col>
+            </Row>
             <div className="meet-sec-body">
               <div className="meet-sec-inner">
                 <Image src="/assets/images/team-1.png" alt="" width={109} height={109}></Image>
@@ -105,21 +106,21 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
       {/* end */}
       {/* inner five */}
       <section className="inner-sec-five">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-xl-8 col-lg-8 col-md-10">
+        <Container>
+          <Row className="justify-content-center">
+            <Col xl={8} lg={8} md={10}>
               <SectionTitle heading="Our collection" smallHeading="Explore our newly released NFT collection " HeadingTag="h3" />
-            </div>
-          </div>
+            </Col>
+          </Row>
           <div className="inner-five-body">
-            <InnerSecFive items={innerFiveData.about}/>
+            <InnerSecFive items={innerFiveData.about} />
           </div>
-        </div>
+        </Container>
       </section>
       {/* end */}
       {/* full image */}

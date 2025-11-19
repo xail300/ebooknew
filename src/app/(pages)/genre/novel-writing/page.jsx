@@ -13,62 +13,68 @@ import { faqsContent } from '@/data/faqsContent'
 import { innerFiveData } from '@/data/innerFiveData'
 import { innerSecTwoData } from '@/data/innerSecTwoData'
 import { roadMapInnerData } from '@/data/roadMapInnerData'
+import { slideContent } from '@/data/sliderData'
 import Image from 'next/image'
 import React from 'react'
+import { Col, Container, Row } from 'react-bootstrap'
 
+export const metadata = {
+  title: "Novel Writing",
+  // description: "Home",
+};
 
 const NovelWriting = () => {
     return (
         <>
             {/* top banner */}
             <section className="top-banner inner-pages">
-                <div className="container">
-                    <div className="row justify-content-between align-items-center">
-                        <div className="col-xl-6 col-lg-6 col-md-6">
+                <Container>
+                    <Row className="justify-content-between align-items-center">
+                        <Col xl={6} lg={6} md={6}>
                             <TopContent someHeadingOne="Professional" someHeadingTwo="Writing Services" spanTitle="EBook" desc="Avail the best ghost-writing services from our affordable self-publishing ghostwriting agency. We are experts in creating fiction, non-fiction, mysteries." />
-                        </div>
-                        <div className="col-xl-4 col-lg-4 col-md-4">
+                        </Col>
+                        <Col xl={4} lg={4} md={4}>
                             <div className="img-right">
                                 <Image src="/assets/images/img-10.png" alt="" fill sizes="(max-width: 767px) 100vw"></Image>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        </Col>
+                    </Row>
+                </Container>
             </section>
             {/* end */}
             {/* inner one */}
             <section className="inner-sec-one">
-                <div className="container">
-                    <div className="row justify-content-between align-items-center">
-                        <div className="col-xl-6 col-lg-6 col-md-6">
+                <Container>
+                    <Row className="justify-content-between align-items-center">
+                        <Col xl={6} lg={6} md={6}>
                             <div className="left">
                                 <SectionTitle heading="Create Magical Stories" desc="Where innovation fuels success! Empower your business with tailor-made mobile apps designed to enhance performance, elevate user experience, and solidify your market presence. Our expertise spans industries like finance, retail, education, healthcare, and beyond." HeadingTag="h2" />
                                 <Button />
                             </div>
-                        </div>
-                        <div className="col-xl-5 col-lg-5 col-md-5">
+                        </Col>
+                        <Col xl={5} lg={5} md={5}>
                             <div className="img-right">
                                 <Image src="/assets/images/novel-writing-1.png" alt="" fill sizes="(max-width: 767px) 100vw"></Image>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        </Col>
+                    </Row>
+                </Container>
             </section>
             {/* end */}
             {/* inner two */}
             <InnerSecTwo items={innerSecTwoData.fiction} />
             {/* end */}
             {/* slider sec */}
-            <SliderSec />
+            <SliderSec items={slideContent.novelPage}/>
             {/* end */}
             {/* road map */}
             <section className="road-map">
-                <div className="container">
-                    <div className="row justify-content-center">
-                        <div className="col-xl-8 col-lg-8 col-md-10">
+                <Container>
+                    <Row className="justify-content-center">
+                        <Col xl={8} lg={8} md={10}>
                             <SectionTitle smallHeading="Roadmap" heading="THE PATH OF YOUR EBOOK" desc="A step-by-step crafted process to transform your idea into a beautifully published eBook — ready for readers, stores, and success." HeadingTag="h3" />
-                        </div>
-                    </div>
+                        </Col>
+                    </Row>
                     <div className="road-map-body">
                         <div className="road-map-left">
                             <MapLeftInner items={roadMapInnerData.leftInner} />
@@ -98,21 +104,21 @@ const NovelWriting = () => {
                             <MapRightInner items={roadMapInnerData.rightInner} />
                         </div>
                     </div>
-                </div>
+                </Container>
             </section>
             {/* end */}
             {/* inner five */}
             <section className="inner-sec-five">
-                <div className="container">
-                    <div className="row justify-content-center">
-                        <div className="col-xl-8 col-lg-8 col-md-10">
+                <Container>
+                    <Row className="justify-content-center">
+                        <Col xl={8} lg={8} md={10}>
                             <SectionTitle heading="Our collection" smallHeading="Explore our newly released NFT collection " HeadingTag="h3" />
-                        </div>
-                    </div>
+                        </Col>
+                    </Row>
                     <div className="inner-five-body">
                         <InnerSecFive items={innerFiveData.fiction} />
                     </div>
-                </div>
+                </Container>
             </section>
             {/* end */}
             {/* full image */}

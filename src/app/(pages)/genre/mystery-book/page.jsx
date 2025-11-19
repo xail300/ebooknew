@@ -19,11 +19,11 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 
 export const metadata = {
-  title: "Fiction",
+  title: "Mystery Book",
   // description: "Home",
 };
 
-const Fiction = () => {
+const MysteryBook = () => {
     return (
         <>
             {/* top banner */}
@@ -35,7 +35,7 @@ const Fiction = () => {
                         </Col>
                         <Col xl={4} lg={4} md={4}>
                             <div className="img-right">
-                                <Image src="/assets/images/fiction-img.png" alt="" fill sizes="(max-width: 767px) 100vw"></Image>
+                                <Image src="/assets/images/img-10.png" alt="" fill sizes="(max-width: 767px) 100vw"></Image>
                             </div>
                         </Col>
                     </Row>
@@ -54,7 +54,7 @@ const Fiction = () => {
                         </Col>
                         <Col xl={5} lg={5} md={5}>
                             <div className="img-right">
-                                <Image src="/assets/images/fiction-1.png" alt="" fill sizes="(max-width: 767px) 100vw"></Image>
+                                <Image src="/assets/images/mystery-book-1.png" alt="" fill sizes="(max-width: 767px) 100vw"></Image>
                             </div>
                         </Col>
                     </Row>
@@ -65,7 +65,7 @@ const Fiction = () => {
             <InnerSecTwo items={innerSecTwoData.fiction} />
             {/* end */}
             {/* slider sec */}
-            <SliderSec items={slideContent.fictionPage}/>
+            <SliderSec items={slideContent.mysteryPage}/>
             {/* end */}
             {/* road map */}
             <section className="road-map">
@@ -134,4 +134,4 @@ const Fiction = () => {
     )
 }
 
-export default Fiction
+export default MysteryBook
