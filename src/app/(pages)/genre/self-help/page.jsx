@@ -19,8 +19,8 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 
 export const metadata = {
-  title: "Self Help",
-  // description: "Home",
+    title: "Self Help",
+    // description: "Home",
 };
 
 const SelfHelp = () => {
@@ -35,7 +35,7 @@ const SelfHelp = () => {
                         </Col>
                         <Col xl={4} lg={4} md={4}>
                             <div className="img-right">
-                                <Image src="/assets/images/img-10.png" alt="" fill sizes="(max-width: 767px) 100vw"></Image>
+                                <Image src="/assets/images/self-help-img.png" alt="" fill sizes="(max-width: 767px) 100vw"></Image>
                             </div>
                         </Col>
                     </Row>
@@ -65,7 +65,7 @@ const SelfHelp = () => {
             <InnerSecTwo items={innerSecTwoData.fiction} />
             {/* end */}
             {/* slider sec */}
-            <SliderSec items={slideContent.selfHelpPage}/>
+            <SliderSec items={slideContent.selfHelpPage} />
             {/* end */}
             {/* road map */}
             <section className="road-map">

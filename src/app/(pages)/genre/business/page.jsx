@@ -35,7 +35,7 @@ const Business = () => {
                         </Col>
                         <Col xl={4} lg={4} md={4}>
                             <div className="img-right">
-                                <Image src="/assets/images/img-10.png" alt="" fill sizes="(max-width: 767px) 100vw"></Image>
+                                <Image src="/assets/images/business-img.png" alt="" fill sizes="(max-width: 767px) 100vw"></Image>
                             </div>
                         </Col>
                     </Row>
