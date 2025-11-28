@@ -7,7 +7,7 @@ const Footer = () => {
         <footer className="footer">
             <Container>
                 <Row className="justify-content-center">
-                    <Col xl={5} lg={4} md={12}>
+                    <Col xl={5} lg={6} md={8}>
                         <div className="footer-logo text-center">
                             <Link href="/"><img src="/assets/images/logo.png" /></Link>
                             <p>Lorem ipsum dolor sit amet consectetur. Purus amet lectus porttitor donec facilisi. Tristique mauris lacus nulla elementum faucibus sit eget ut et.</p>

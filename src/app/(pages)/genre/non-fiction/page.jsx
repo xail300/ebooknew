@@ -79,7 +79,7 @@ const NonFiction = () => {
                         <div className="road-map-left">
                             <MapLeftInner items={roadMapInnerData.leftInner} />
                         </div>
-                        <div className="road-map-center d-md-block d-none">
+                        <div className="road-map-center d-lg-block d-none">
                             <div className="shape">
                                 <Image src="/assets/images/shape.png" alt="" width={148} height={148} />
                                 <span>01</span>

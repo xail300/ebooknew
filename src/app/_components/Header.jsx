@@ -95,12 +95,12 @@ const Header = () => {
                                     <ul className={`dropdown-menu ${isHover.services ? 'show' : ''}`}
                                         onMouseEnter={() => handleMouseEnter('services')}
                                         onMouseLeave={() => handleMouseLeave('services')} aria-labelledby="navbarDropdown">
-                                        <li><Link className="dropdown-item" href="/ebook-writing">eBook Writing</Link></li>
-                                        <li><Link className="dropdown-item" href="/ebook-editing">eBook Editing</Link></li>
-                                        <li><Link className="dropdown-item" href="/ebook-marketing">eBook Marketing</Link></li>
-                                        <li><Link className="dropdown-item" href="/ebook-publishing">eBook Publishing</Link></li>
-                                        <li><Link className="dropdown-item" href="/ebook-cover">eBook Cover</Link></li>
-                                        <li><Link className="dropdown-item" href="/children-book">Children Book</Link></li>
+                                        <li><Link className="dropdown-item" href="/services/ebook-writing">eBook Writing</Link></li>
+                                        <li><Link className="dropdown-item" href="/services/ebook-editing">eBook Editing</Link></li>
+                                        <li><Link className="dropdown-item" href="/services/ebook-marketing">eBook Marketing</Link></li>
+                                        <li><Link className="dropdown-item" href="/services/ebook-publishing">eBook Publishing</Link></li>
+                                        <li><Link className="dropdown-item" href="/services/ebook-cover">eBook Cover</Link></li>
+                                        <li><Link className="dropdown-item" href="/services/children-book">Children Book</Link></li>
                                     </ul>
                                 </li>
                                 <li className="nav-item dropdown">

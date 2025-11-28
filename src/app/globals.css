@@ -527,7 +527,7 @@ header.sticky img {
 
 .banner-sec .right>img {
   position: absolute;
-  bottom: -208px;
+  bottom: -134px;
 }
 
 /* end */
@@ -663,7 +663,7 @@ header.sticky img {
 
 .service-sec .right .service-right-inner i {
   color: #fff;
-  font-size: 35px; 
+  font-size: 35px;
 }
 
 /* end */
@@ -951,6 +951,20 @@ header.sticky img {
 /* inner-sec-five */
 .inner-sec-five {
   padding: 40px 0 80px;
+  position: relative;
+}
+
+.inner-sec-five:before {
+  content: "";
+  position: absolute;
+  background: #D3ED05;
+  opacity: 0.75;
+  filter: blur(157.476px);
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20%;
+  height: 20%;
 }
 
 .inner-sec-five .inner-five-body {
@@ -1405,6 +1419,295 @@ input::-webkit-inner-spin-button {
   .sec-three .left .sec-three-inner span,
   .sec-three .right .sec-three-inner span {
     transform: translate(-40%, -50%);
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279) {
+
+  .top-banner .center-col h1,
+  .section-title h2,
+  .section-title h3,
+  .banner-sec .left h3,
+  .top-banner .right .number span {
+    font-size: 35px;
+    line-height: normal;
+  }
+
+  .top-banner .center,
+  .service-sec .left,
+  .full-img .full-img-body,
+  .contact-us .contact-left,
+  .inner-pages .img-right,
+  .inner-sec-one .img-right {
+    height: 400px;
+  }
+
+  .sec-one .sec-one-body .sec-one-inner,
+  .sec-one .sec-one-body .sec-one-inner>img,
+  .sec-two .sec-two-inner .sec-sub-inner,
+  .inner-sec-one .img-right {
+    width: 100%;
+  }
+
+  .sec-one .sec-one-body .sec-one-inner>img {
+    height: auto;
+  }
+
+  .sec-one .sec-one-body .sec-one-inner .overflow-sec {
+    transform: translate(-44%, -55%);
+  }
+
+  .sec-one .sec-one-body .sec-one-inner .overflow-sec span,
+  .sec-one .sec-one-body .sec-one-inner .overflow-sec-one span,
+  .sec-one .sec-one-body .sec-one-inner .overflow-sec-two span {
+    font-size: 15px;
+  }
+
+  .sec-one .sec-one-body .sec-one-inner .overflow-sec-one {
+    transform: translate(-56%, -50%);
+  }
+
+  .sec-one .sec-one-body .sec-one-inner .overflow-sec-two {
+    transform: translate(-43%, -48%);
+  }
+
+  .sec-two .sec-two-inner h3 {
+    font-size: 28.6667px;
+    line-height: 40px;
+  }
+
+  .sec-two .sec-two-inner .sec-two-sub-inner span {
+    width: 48.333%;
+  }
+
+  .banner-sec .right>img {
+    width: 100%;
+    height: auto;
+  }
+
+  .sec-three .left .sec-three-inner,
+  .sec-three .right .sec-three-inner {
+    width: 75%;
+    margin: auto;
+  }
+
+  .sec-three .left .sec-three-inner img,
+  .sec-three .right .sec-three-inner img {
+    width: 100%;
+    height: auto;
+  }
+
+  .sec-three .center {
+    height: 650px;
+  }
+
+  .sec-three .left .sec-three-inner span,
+  .sec-three .right .sec-three-inner span {
+    font-size: 14px;
+  }
+
+  .road-map .road-map-body .road-map-left-inner:first-child,
+  .road-map .road-map-body .road-map-right-inner:first-child {
+    margin-bottom: 300px;
+  }
+
+  .meet-sec .meet-sec-body {
+    flex-wrap: wrap;
+  }
+
+  .road-map .road-map-body .road-map-left .road-map-left-inner h3,
+  .road-map .road-map-body .road-map-right .road-map-right-inner h3 {
+    font-size: 26.42px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023) {
+
+  .top-banner .center-col h1,
+  .section-title h2,
+  .section-title h3,
+  .banner-sec .left h3,
+  .top-banner .right .number span {
+    font-size: 28px;
+    line-height: normal;
+  }
+
+  .top-banner {
+    padding: 110px 0;
+  }
+
+  .top-banner .left>img {
+    width: 100%;
+    height: auto;
+  }
+
+  .top-banner .center {
+    margin-top: 35px;
+    height: 300px;
+  }
+
+  .sec-one .sec-one-body .sec-one-inner .overflow-sec-one .overflow-sec-inner img,
+  .sec-one .sec-one-body .sec-one-inner .overflow-sec-two .overflow-sec-inner img,
+  .sec-one .sec-one-body .sec-one-inner .overflow-sec .overflow-sec-inner img {
+    display: none;
+  }
+
+  .sec-one .sec-one-body .sec-one-inner,
+  .sec-one .sec-one-body .sec-one-inner>img,
+  .sec-two .sec-two-inner .sec-sub-inner,
+  .inner-sec-one .img-right {
+    width: 100%;
+  }
+
+  .sec-one .sec-one-body .sec-one-inner>img {
+    height: auto;
+  }
+
+  .sec-one .sec-one-body .sec-one-inner .overflow-sec span,
+  .sec-one .sec-one-body .sec-one-inner .overflow-sec-one span,
+  .sec-one .sec-one-body .sec-one-inner .overflow-sec-two span {
+    font-size: 14px;
+  }
+
+  .sec-one .sec-one-body .sec-one-inner .overflow-sec {
+    transform: translate(-42%, -78%);
+  }
+
+  .sec-one .sec-one-body .sec-one-inner .overflow-sec-one {
+    transform: translate(-56%, -55%);
+  }
+
+  .sec-one .sec-one-body .sec-one-inner .overflow-sec-two {
+    transform: translate(-44%, -70%);
+  }
+
+  .sec-two .sec-two-inner h3,
+  .service-sec .right .service-right-inner a,
+  .road-map .road-map-body .road-map-left .road-map-left-inner h3,
+  .road-map .road-map-body .road-map-right .road-map-right-inner h3 {
+    font-size: 24px;
+    line-height: normal;
+  }
+
+  .sec-two .sec-two-inner .sec-two-sub-inner span {
+    width: 48.333%;
+  }
+
+  .full-img .full-img-body {
+    height: 300px;
+  }
+
+  .banner-sec .right>img {
+    margin-top: 45px;
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  .sec-two {
+    padding: 30px 0 0;
+  }
+
+  .sec-three .left .sec-three-inner img,
+  .sec-three .right .sec-three-inner img {
+    width: 100%;
+    height: auto;
+  }
+
+  .sec-three .left .sec-three-inner:nth-child(2) {
+    right: 0;
+  }
+
+  .sec-three .right .sec-three-inner:first-child {
+    top: 0;
+  }
+
+  .sec-three .right .sec-three-inner:nth-child(2) {
+    left: 0;
+  }
+
+  .sec-three .center {
+    height: 600px;
+    margin: 35px 0;
+  }
+
+  .sec-three .bg-image {
+    padding-top: 40px;
+  }
+
+  .service-sec .left {
+    height: 300px;
+  }
+
+  .service-sec,
+  .road-map {
+    padding: 30px 0;
+  }
+
+  .road-map .road-map-body {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .road-map .road-map-body .road-map-left-inner:first-child,
+  .road-map .road-map-body .road-map-right-inner:first-child {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .road-map .road-map-body .road-map-left,
+  .road-map .road-map-body .road-map-right {
+    display: flex;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .sec-three .left .sec-three-inner,
+  .sec-three .right .sec-three-inner {
+    width: 75%;
+    margin: auto;
+  }
+
+  .sec-three .left .sec-three-inner span,
+  .sec-three .right .sec-three-inner span {
+    font-size: 10px;
+  }
+
+  .road-map .road-map-body .road-map-left .road-map-left-inner span,
+  .road-map .road-map-body .road-map-right .road-map-right-inner span {
+    font-size: 16px;
+  }
+
+  .contact-us .contact-left {
+    height: 300px;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .footer .footer-links {
+    border-left: 0;
+    padding-left: 0;
+    margin-bottom: 40px;
+  }
+
+  .footer .footer-bootom-links>p {
+    text-align: center;
+  }
+
+  .footer .other-links>p {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .inner-pages .img-right,
+  .inner-sec-one .img-right {
+    height: 300px;
+  }
+
+  .meet-sec .meet-sec-body {
+    flex-wrap: wrap;
   }
 }
 

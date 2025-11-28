@@ -7,7 +7,7 @@ const BannerSec = () => {
     return (
         <section className="banner-sec">
             <Container>
-                <Row className="justify-content-between">
+                <Row className="justify-content-between align-items-center">
                     <Col xl={6} lg={6} md={6}>
                         <div className="left">
                             <h3>Looking to Create A Scalable Ebook Solution?</h3>

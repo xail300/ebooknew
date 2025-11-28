@@ -7,23 +7,21 @@ import InnerSecTwo from '@/app/_components/InnerSecTwo'
 import MapLeftInner from '@/app/_components/MapLeftInner'
 import MapRightInner from '@/app/_components/MapRightInner'
 import SectionTitle from '@/app/_components/SectionTitle'
-import SliderSec from '@/app/_components/SliderSec'
 import TopContent from '@/app/_components/TopContent'
 import { faqsContent } from '@/data/faqsContent'
 import { innerFiveData } from '@/data/innerFiveData'
 import { innerSecTwoData } from '@/data/innerSecTwoData'
 import { roadMapInnerData } from '@/data/roadMapInnerData'
-import { slideContent } from '@/data/sliderData'
 import Image from 'next/image'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 
 export const metadata = {
-  title: "Business",
+  title: "eBook Editing",
   // description: "Home",
 };
 
-const Business = () => {
+const Autobiography = () => {
     return (
         <>
             {/* top banner */}
@@ -35,7 +33,7 @@ const Business = () => {
                         </Col>
                         <Col xl={4} lg={4} md={4}>
                             <div className="img-right">
-                                <Image src="/assets/images/business-img.png" alt="" fill sizes="(max-width: 767px) 100vw"></Image>
+                                <Image src="/assets/images/ebook-editing-img.png" alt="" fill sizes="(max-width: 767px) 100vw"></Image>
                             </div>
                         </Col>
                     </Row>
@@ -53,8 +51,8 @@ const Business = () => {
                             </div>
                         </Col>
                         <Col xl={5} lg={5} md={5}>
-                            <div className="img-right">
-                                <Image src="/assets/images/business-1.png" alt="" fill sizes="(max-width: 767px) 100vw"></Image>
+                            <div className="img-right w-100">
+                                <Image src="/assets/images/ebook-editing-1.png" alt="" fill sizes="(max-width: 767px) 100vw"></Image>
                             </div>
                         </Col>
                     </Row>
@@ -63,9 +61,6 @@ const Business = () => {
             {/* end */}
             {/* inner two */}
             <InnerSecTwo items={innerSecTwoData.fiction} />
-            {/* end */}
-            {/* slider sec */}
-            <SliderSec items={slideContent.businessPage}/>
             {/* end */}
             {/* road map */}
             <section className="road-map">
@@ -134,4 +129,4 @@ const Business = () => {
     )
 }
 
-export default Business
+export default Autobiography

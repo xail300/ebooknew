@@ -27,12 +27,12 @@ export default function Home() {
       <section className="top-banner">
         <Container>
           <Row className="justify-content-center align-items-center">
-            <Col xl={6} lg={6} md={12}>
+            <Col xl={6} lg={8} md={12}>
               <TopContent someHeadingOne="Professional" someHeadingTwo="Writing Services" spanTitle="EBook" desc="Avail the best ghost-writing services from our affordable self-publishing ghostwriting agency. We are experts in creating fiction, non-fiction, mysteries." />
             </Col>
           </Row>
           <Row className="justify-content-between">
-            <Col xl={3} lg={3} md={6}>
+            <Col xl={3} lg={4} md={4}>
               <div className="left">
                 <Image src="/assets/images/img-1.png" alt="" width={299} height={351} />
                 <div className="overflow-sec">
@@ -40,16 +40,16 @@ export default function Home() {
                     <p>Rarity Score:</p>
                     <span>8.7/10</span>
                   </div>
-                  <Image src="/assets/images/circle-img.png" alt="" width={62} height={62} />
+                  <Image src="/assets/images/circle-img.png" alt="" width={42} height={62} />
                 </div>
               </div>
             </Col>
-            <Col xl={5} lg={5} md={6}>
+            <Col xl={5} lg={4} md={4}>
               <div className="center text-center">
                 <Image src="/assets/images/img-2.png" alt="" fill sizes="(max-width: 767px) 100vw" />
               </div>
             </Col>
-            <Col xl={3} lg={3} md={6}>
+            <Col xl={3} lg={4} md={4}>
               <div className="right">
                 <div className="number">
                   <span>500+</span>
@@ -278,7 +278,7 @@ export default function Home() {
             <div className="road-map-left">
               <MapLeftInner items={roadMapInnerData.leftInner} />
             </div>
-            <div className="road-map-center d-md-block d-none">
+            <div className="road-map-center d-lg-block d-none">
               <div className="shape">
                 <Image src="/assets/images/shape.png" alt="" width={148} height={148} />
                 <span>01</span>
