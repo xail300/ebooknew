@@ -10,7 +10,7 @@ const Footer = () => {
                     <Col xl={5} lg={6} md={8}>
                         <div className="footer-logo text-center">
                             <Link href="/"><img src="/assets/images/logo.png" /></Link>
-                            <p>Lorem ipsum dolor sit amet consectetur. Purus amet lectus porttitor donec facilisi. Tristique mauris lacus nulla elementum faucibus sit eget ut et.</p>
+                            <p>Manhattan Book Publisher has a writing service on eBooks that is dedicated to ensuring that your ideas are converted into captivating digital manuscripts that have the potential to hold the attention of readers all over the world.</p>
                             <div className="social">
                                 <Link target="_blank" aria-label="Facebook" href="#"><i className="ri-facebook-circle-line"></i></Link>
                                 <Link target="_blank" aria-label="LinkedIn" href="#"><i className="ri-instagram-line"></i></Link>
@@ -26,9 +26,8 @@ const Footer = () => {
                             <h6>Quick Links</h6>
                             <ul className="list-unstyled">
                                 <li><Link href="/">Home</Link></li>
-                                <li><Link href="/">About Us</Link></li>
-                                <li><Link href="/">Portfolio</Link></li>
-                                <li><Link href="/">Contact Us</Link></li>
+                                <li><Link href="/about-us">About Us</Link></li>
+                                <li><Link href="/contact-us">Contact Us</Link></li>
                             </ul>
                         </div>
                     </Col>
@@ -36,12 +35,12 @@ const Footer = () => {
                         <div className="footer-links">
                             <h6>Services</h6>
                             <ul className="list-unstyled">
-                                <li><Link href="/">eBook Writing</Link></li>
-                                <li><Link href="/">eBook Editing</Link></li>
-                                <li><Link href="/">eBook Marketing</Link></li>
-                                <li><Link href="/">eBook Publishing</Link></li>
-                                <li><Link href="/">eBook Cover</Link></li>
-                                <li><Link href="/">Children Book</Link></li>
+                                <li><Link href="/services/ebook-writing">eBook Writing</Link></li>
+                                <li><Link href="/services/ebook-editing">eBook Editing</Link></li>
+                                <li><Link href="/services/ebook-marketing">eBook Marketing</Link></li>
+                                <li><Link href="/services/ebook-publishing">eBook Publishing</Link></li>
+                                <li><Link href="/services/ebook-cover">eBook Cover</Link></li>
+                                <li><Link href="/services/children-book">Children Book</Link></li>
                             </ul>
                         </div>
                     </Col>
@@ -49,13 +48,13 @@ const Footer = () => {
                         <div className="footer-links mb-0">
                             <h6>Genre</h6>
                             <ul className="list-unstyled">
-                                <li><Link href="/">Autobiography</Link> </li>
-                                <li><Link href="/">Business</Link></li>
-                                <li><Link href="/">Fiction</Link></li>
-                                <li><Link href="/">Mystery Book</Link></li>
-                                <li><Link href="/">Non-Fiction</Link></li>
-                                <li><Link href="/">Novel Writing</Link></li>
-                                <li><Link href="/">Self Help</Link></li>
+                                <li><Link href="/genre/autobiography">Autobiography</Link> </li>
+                                <li><Link href="/genre/business">Business</Link></li>
+                                <li><Link href="/genre/fiction">Fiction</Link></li>
+                                <li><Link href="/genre/mystery-book">Mystery Book</Link></li>
+                                <li><Link href="/genre/non-fiction">Non-Fiction</Link></li>
+                                <li><Link href="/genre/novel-writing">Novel Writing</Link></li>
+                                <li><Link href="/genre/self-help">Self Help</Link></li>
                             </ul>
                         </div>
                     </Col>

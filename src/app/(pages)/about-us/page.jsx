@@ -25,7 +25,7 @@ const About = () => {
         <Container>
           <Row className="justify-content-between align-items-center">
             <Col xl={6} lg={6} md={6}>
-              <TopContent someHeadingOne="About" someHeadingTwo="" spanTitle="US" desc="Avail the best ghost-writing services from our affordable self-publishing ghostwriting agency. We are experts in creating fiction, non-fiction, mysteries." />
+              <TopContent someHeadingOne="About" someHeadingTwo="" spanTitle="US" desc="Let us do the work for you. We will create high-quality content for you using our abilities, imagination, and years of ebook writing experience." />
             </Col>
             <Col xl={4} lg={4} md={4}>
               <div className="img-right">
@@ -40,9 +40,9 @@ const About = () => {
       <section className="inner-sec-one">
         <Container>
           <Row className="justify-content-between align-items-center">
-            <Col xl={6} lg={6} md={6}>
+            <Col xl={7} lg={7} md={7}>
               <div className="left">
-                <SectionTitle heading="Create Magical Stories" desc="Where innovation fuels success! Empower your business with tailor-made mobile apps designed to enhance performance, elevate user experience, and solidify your market presence. Our expertise spans industries like finance, retail, education, healthcare, and beyond." HeadingTag="h2" />
+                <SectionTitle heading="Three Crucial Characteristics of eBook Writing Services" desc="Creating an eBook is an influential method of exchanging your knowledge, ideas or even stories with the rest of the world. Nonetheless, this might not be an easy process especially without the relevant professional expertise. Three major characteristics of these services make them very valuable as discussed below." HeadingTag="h2" />
                 <Button />
               </div>
             </Col>
@@ -64,7 +64,7 @@ const About = () => {
           <div className="meet-sec-bg">
             <Row className="justify-content-center">
               <Col xl={8} lg={8} md={10}>
-                <SectionTitle heading="Meet Our Featured Authors - Discover Their Stories" HeadingTag="h3" />
+                <SectionTitle heading="Get to Know Our Featured Writers and Learn About Their Stories" HeadingTag="h3" />
               </Col>
             </Row>
             <div className="meet-sec-body">
@@ -113,8 +113,8 @@ const About = () => {
       <section className="inner-sec-five">
         <Container>
           <Row className="justify-content-center">
-            <Col xl={8} lg={8} md={10}>
-              <SectionTitle heading="Our collection" smallHeading="Explore our newly released NFT collection " HeadingTag="h3" />
+            <Col xl={10} lg={10} md={10}>
+              <SectionTitle heading="eBook Writing Services in Four Steps" smallHeading="Work Process of Our" HeadingTag="h3" />
             </Col>
           </Row>
           <div className="inner-five-body">

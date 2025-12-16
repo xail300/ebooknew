@@ -8,7 +8,7 @@ const Faqs = ({ items }) => {
             <Container>
                 <Row className="justify-content-center">
                     <Col xl={8} lg={8} md={10}>
-                        <SectionTitle smallHeading="FAQ" heading="THE PATH OF YOUR EBOOK" desc="A stealth-crafted ecosystem built for sustainability, utility, and long-term holder value." HeadingTag="h3" />
+                        <SectionTitle smallHeading="FAQs" heading="Frequently Asked Questions" desc="Some of the most frequent questions that a client poses are answered below." HeadingTag="h3" />
                     </Col>
                 </Row>
                 <Row className="justify-content-center">

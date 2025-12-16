@@ -21,15 +21,15 @@ export const metadata = {
   // description: "Home",
 };
 
-const Autobiography = () => {
+const EbookPublishingPage = () => {
     return (
         <>
             {/* top banner */}
             <section className="top-banner inner-pages">
                 <Container>
                     <Row className="justify-content-between align-items-center">
-                        <Col xl={6} lg={6} md={6}>
-                            <TopContent someHeadingOne="Professional" someHeadingTwo="Writing Services" spanTitle="EBook" desc="Avail the best ghost-writing services from our affordable self-publishing ghostwriting agency. We are experts in creating fiction, non-fiction, mysteries." />
+                        <Col xl={7} lg={7} md={7}>
+                            <TopContent someHeadingOne="Get the Book Publishing Services of" someHeadingTwo="so that your Imaginations can be Cleverly brought into Life!" spanTitle="XYZ" desc="We refer to ourselves as the best book-self-publishing companies where authors can publish books at their own expense." />
                         </Col>
                         <Col xl={4} lg={4} md={4}>
                             <div className="img-right">
@@ -44,9 +44,9 @@ const Autobiography = () => {
             <section className="inner-sec-one">
                 <Container>
                     <Row className="justify-content-between align-items-center">
-                        <Col xl={6} lg={6} md={6}>
+                        <Col xl={7} lg={7} md={7}>
                             <div className="left">
-                                <SectionTitle heading="Create Magical Stories" desc="Where innovation fuels success! Empower your business with tailor-made mobile apps designed to enhance performance, elevate user experience, and solidify your market presence. Our expertise spans industries like finance, retail, education, healthcare, and beyond." HeadingTag="h2" />
+                                <SectionTitle heading="Three Identified Features of eBook publishing services" desc="It is also significant when a book is published in electronic form as when it is written. You can easily go with professional publishing and present your ideas, stories and knowledge to the readers in a clear, easy to read and standard form that is in the industry." HeadingTag="h2" />
                                 <Button />
                             </div>
                         </Col>
@@ -60,19 +60,19 @@ const Autobiography = () => {
             </section>
             {/* end */}
             {/* inner two */}
-            <InnerSecTwo items={innerSecTwoData.fiction} />
+            <InnerSecTwo items={innerSecTwoData.eBookPublishing} />
             {/* end */}
             {/* road map */}
             <section className="road-map">
                 <Container>
                     <Row className="justify-content-center">
-                        <Col xl={8} lg={8} md={10}>
-                            <SectionTitle smallHeading="Roadmap" heading="THE PATH OF YOUR EBOOK" desc="A step-by-step crafted process to transform your idea into a beautifully published eBook — ready for readers, stores, and success." HeadingTag="h3" />
+                        <Col xl={10} lg={10} md={10}>
+                            <SectionTitle smallHeading="Roadmap" heading="eBook Publishing Service Work Process Four Steps" desc="Our online publishing model consists of four steps of a systematic method that can transform your text into a convenient, professional and polished digital book that is easy to locate. We ensure that your work is prepared to get admitted by the industry in a readable format and in a position to succeed in the leading platforms." HeadingTag="h3" />
                         </Col>
                     </Row>
                     <div className="road-map-body">
                         <div className="road-map-left">
-                            <MapLeftInner items={roadMapInnerData.leftInner} />
+                            <MapLeftInner items={roadMapInnerData.eBookPublishingLeftInner} />
                         </div>
                         <div className="road-map-center d-lg-block d-none">
                             <div className="shape">
@@ -96,7 +96,7 @@ const Autobiography = () => {
                             </div>
                         </div>
                         <div className="road-map-right">
-                            <MapRightInner items={roadMapInnerData.rightInner} />
+                            <MapRightInner items={roadMapInnerData.eBookPublishingRightInner} />
                         </div>
                     </div>
                 </Container>
@@ -107,11 +107,11 @@ const Autobiography = () => {
                 <Container>
                     <Row className="justify-content-center">
                         <Col xl={8} lg={8} md={10}>
-                            <SectionTitle heading="Our collection" smallHeading="Explore our newly released NFT collection " HeadingTag="h3" />
+                            <SectionTitle heading="eBook publishing services offered by XYZ Site" smallHeading="Four Benefits of" HeadingTag="h3" />
                         </Col>
                     </Row>
                     <div className="inner-five-body">
-                        <InnerSecFive items={innerFiveData.fiction} />
+                        <InnerSecFive items={innerFiveData.eBookPublishing} />
                     </div>
                 </Container>
             </section>
@@ -120,7 +120,7 @@ const Autobiography = () => {
             <FullImage />
             {/* end */}
             {/* faqs */}
-            <Faqs items={faqsContent.fiction} />
+            <Faqs items={faqsContent.eBookPublishing} />
             {/* end */}
             {/* get quote */}
             <GetQuote />
@@ -129,4 +129,4 @@ const Autobiography = () => {
     )
 }
 
-export default Autobiography
+export default EbookPublishingPage

@@ -27,8 +27,8 @@ export default function Home() {
       <section className="top-banner">
         <Container>
           <Row className="justify-content-center align-items-center">
-            <Col xl={6} lg={8} md={12}>
-              <TopContent someHeadingOne="Professional" someHeadingTwo="Writing Services" spanTitle="EBook" desc="Avail the best ghost-writing services from our affordable self-publishing ghostwriting agency. We are experts in creating fiction, non-fiction, mysteries." />
+            <Col xl={8} lg={8} md={12}>
+              <TopContent someHeadingOne="Hire Our Expert" someHeadingTwo="to Craft Compelling eBooks" spanTitle="Ebook Writers" desc="Let us handle the task for you. Our skills, creativity and years of experience in writing ebooks will be used to design quality content on your behalf." />
             </Col>
           </Row>
           <Row className="justify-content-between">
@@ -74,7 +74,7 @@ export default function Home() {
         <Container>
           <Row className="justify-content-center">
             <Col xl={8} lg={8} md={10}>
-              <SectionTitle smallHeading="features" heading="Lorem ipsum dolor sit amet, consec elit," />
+              <SectionTitle smallHeading="Expertise On Peak" heading="Below Is Presented Some Of Our Expert Level Work" />
             </Col>
           </Row>
           <div className="sec-one-body">
@@ -120,14 +120,14 @@ export default function Home() {
         <Container>
           <Row className="justify-content-center">
             <Col xl={8} lg={8} md={10}>
-              <SectionTitle smallHeading="features" heading="UNLOCK THE POWER OF YOUR STORY" desc="A stealth-crafted ecosystem built for sustainability, utility, and long-term holder value." HeadingTag="h3" />
+              <SectionTitle smallHeading="features" heading="Unleash Your Story With Our Ebook Writing Services" desc="Turn your imagination into compelling words with the assistance of our expert ebook writers" HeadingTag="h3" />
             </Col>
           </Row>
           <Row>
             <Col xl={6} lg={6} md={6}>
               <div className="sec-two-inner">
-                <h3>PROFESSIONAL EBOOK CREATION</h3>
-                <p>Every eBook is crafted to perfection — blending storytelling, visuals, and strategy for maximum impact. </p>
+                <h3>Professional Ebook Services That We Offer</h3>
+                <p>Below are given some of our expertly crafted ebook services that makes your ebook attention grabbing and readable for the audience.</p>
                 <div className="sec-two-sub-inner">
                   <span>eBook Writing</span>
                   <span>Editing</span>
@@ -144,8 +144,8 @@ export default function Home() {
                 </div>
               </div>
               <div className="sec-two-inner">
-                <h3>AUTHOR  & COLLABORATION HUB</h3>
-                <p>Join a growing network of writers, creators, and digital publishers.</p>
+                <h3>We Let One Of The Most Successful eBook Ghostwriters Work On Your eBook Projects</h3>
+                <p>We have also worked with hundreds of authors who had problems with self-publishing their ebooks before approaching us.</p>
                 <div className="sec-sub-inner mt-5">
                   <Image src="/assets/images/img-6.png" alt="" fill sizes="(max-width: 767px) 100vw" />
                 </div>
@@ -153,8 +153,8 @@ export default function Home() {
             </Col>
             <Col xl={6} lg={6} md={6}>
               <div className="sec-two-inner">
-                <h3>DIGITAL DESIGN & VISUAL REWARDS</h3>
-                <p>Your story deserves to look as good as it reads. Our expert designers create stunning, scroll-stopping layouts </p>
+                <h3>We Are Hired With A Team Of Highly Professional Ebook Writers</h3>
+                <p>At XYZ firm, we have a team of expert ebook writers who have excessive years of experience in writing ebooks. Our writers offer multiple benefits such as:</p>
                 <div className="sec-two-box">
                   <div className="pattern-one"><Image src="/assets/images/pattern-1.png" alt="" width={104} height={104} /></div>
                   <div className="pattern-two"><Image src="/assets/images/pattern-2.png" alt="" width={98} height={98} /></div>
@@ -162,11 +162,10 @@ export default function Home() {
                   <div className="sec-two-inner-box">
                     <span>What You Get:</span>
                     <ul>
-                      <li><i className="ri-checkbox-line"></i> Interactive Page Elements</li>
-                      <li><i className="ri-checkbox-line"></i> Engaging Typography</li>
-                      <li><i className="ri-checkbox-line"></i> Device-Responsive Layouts</li>
+                      <li><i className="ri-checkbox-line"></i> Compelling Stories</li>
+                      <li><i className="ri-checkbox-line"></i> Over years of expertise</li>
+                      <li><i className="ri-checkbox-line"></i> 24/7 Co-ordination</li>
                     </ul>
-                    <p className="mb-0">From scattered sparks to sharp results.</p>
                   </div>
                   <div className="btn-contact">
                     <Link href="/contact-us"><span><i className="ri-add-large-line"></i> Contact us</span></Link>
@@ -174,8 +173,8 @@ export default function Home() {
                 </div>
               </div>
               <div className="sec-two-inner">
-                <h3>READY TO PUBLISH YOUR MASTERPIECE?</h3>
-                <p>Start your journey with professional eBook design and unlock access to premium creative services and a community that values your vision.</p>
+                <h3>The Strengths of Our Platform</h3>
+                <p>We are the right provider of your writing needs in the form of book-writing. Do not miss a chance to employ one of our professional writers of books who will help to make your views come alive.</p>
                 <Button />
               </div>
             </Col>
@@ -191,7 +190,7 @@ export default function Home() {
         <Container>
           <Row className="justify-content-center">
             <Col xl={8} lg={8} md={10}>
-              <SectionTitle smallHeading="EBOOK EXPERIENCE" heading="THE DIGITAL STORY" desc="A design-driven ecosystem built for authors, creators, and entrepreneurs — focused on storytelling, creativity, and long-term brand growth." HeadingTag="h3" />
+              <SectionTitle smallHeading="Why Experience Matters?" heading="Here Is Our Authentic Work Procedure" desc="To make you understand more properly we have categorized the steps of our professional work process that makes your ebooks stand out." HeadingTag="h3" />
             </Col>
           </Row>
           <div className="bg-image">
@@ -200,11 +199,11 @@ export default function Home() {
                 <div className="left">
                   <div className="sec-three-inner">
                     <Image src="/assets/images/img-8.png" alt="" width={331} height={331} />
-                    <span>Unique Visual Direction</span>
+                    <span>Consultation</span>
                   </div>
                   <div className="sec-three-inner">
                     <Image src="/assets/images/img-8.png" alt="" width={331} height={331} />
-                    <span>Device-Optimized Reading Experience</span>
+                    <span>Planning Strategically</span>
                   </div>
                 </div>
               </Col>
@@ -217,11 +216,11 @@ export default function Home() {
                 <div className="right">
                   <div className="sec-three-inner">
                     <Image src="/assets/images/img-8.png" alt="" width={331} height={331} />
-                    <span>Interactive Layout Design</span>
+                    <span>Completing</span>
                   </div>
                   <div className="sec-three-inner">
                     <Image src="/assets/images/img-8.png" alt="" width={331} height={331} />
-                    <span>Custom Brand Elements</span>
+                    <span>Start the Plan</span>
                   </div>
                 </div>
               </Col>
@@ -234,11 +233,11 @@ export default function Home() {
       <section className="service-sec">
         <Container>
           <Row className="justify-content-between align-items-center">
-            <Col xl={5} lg={5} md={5}>
-              <SectionTitle smallHeading="Service" heading="Solution we provide" HeadingTag="h3" />
+            <Col xl={6} lg={6} md={6}>
+              <SectionTitle smallHeading="Service" heading="eBook Services That We Offer" HeadingTag="h3" />
             </Col>
             <Col xl={6} lg={6} md={6}>
-              <SectionTitle desc="Our team of hardworking individuals has always strived for perfection. We have helped many writers and authors to date to publish their masterpieces, edit their manusciripts for perfection" />
+              <SectionTitle desc="Our widely popular ebook service’s firm offers various top grade ebook writing services that has aided multiple publishers and authors in crafting some of the most amazing ebooks." />
             </Col>
           </Row>
           <Row className="justify-content-between align-items-center mt-md-5 mt-0">
@@ -270,8 +269,8 @@ export default function Home() {
       <section className="road-map">
         <Container>
           <Row className="justify-content-center">
-            <Col xl={8} lg={8} md={10}>
-              <SectionTitle smallHeading="Roadmap" heading="THE PATH OF YOUR EBOOK" desc="A step-by-step crafted process to transform your idea into a beautifully published eBook — ready for readers, stores, and success." HeadingTag="h3" />
+            <Col xl={10} lg={10} md={10}>
+              <SectionTitle smallHeading="Roadmap" heading="Four Characteristics of eBook Writing Services" desc="These services combine creativity, technical and industry expertise and knowledge to make your eBook be noticed in a competitive market place." HeadingTag="h3" />
             </Col>
           </Row>
           <div className="road-map-body">

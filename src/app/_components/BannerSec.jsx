@@ -10,7 +10,7 @@ const BannerSec = () => {
                 <Row className="justify-content-between align-items-center">
                     <Col xl={6} lg={6} md={6}>
                         <div className="left">
-                            <h3>Looking to Create A Scalable Ebook Solution?</h3>
+                            <h3>Looking Forward To Getting A Mesmerizing Ebook Solution?</h3>
                             <Button />
                         </div>
                     </Col>
