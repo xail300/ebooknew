@@ -23,7 +23,7 @@ export const metadata = {
   // description: "Home",
 };
 
-const Business = () => {
+const BusinessPage = () => {
     return (
         <>
             {/* top banner */}
@@ -31,7 +31,7 @@ const Business = () => {
                 <Container>
                     <Row className="justify-content-between align-items-center">
                         <Col xl={6} lg={6} md={6}>
-                            <TopContent someHeadingOne="Professional" someHeadingTwo="Writing Services" spanTitle="EBook" desc="Avail the best ghost-writing services from our affordable self-publishing ghostwriting agency. We are experts in creating fiction, non-fiction, mysteries." />
+                            <TopContent someHeadingOne="High Quality" someHeadingTwo="Book Writing" spanTitle="Business" desc="Collaborate with our team of experienced business authors, business experts, and professional editors to produce a powerful book that will enhance your authority." />
                         </Col>
                         <Col xl={4} lg={4} md={4}>
                             <div className="img-right">
@@ -46,9 +46,9 @@ const Business = () => {
             <section className="inner-sec-one">
                 <Container>
                     <Row className="justify-content-between align-items-center">
-                        <Col xl={6} lg={6} md={6}>
+                        <Col xl={7} lg={7} md={7}>
                             <div className="left">
-                                <SectionTitle heading="Create Magical Stories" desc="Where innovation fuels success! Empower your business with tailor-made mobile apps designed to enhance performance, elevate user experience, and solidify your market presence. Our expertise spans industries like finance, retail, education, healthcare, and beyond." HeadingTag="h2" />
+                                <SectionTitle heading="Three Critical Components of Business Book Writing Services" desc="A business book well written is not only informative but inspiring, it makes you a thought leader and creates a connection that is meaningful with your readers." HeadingTag="h2" />
                                 <Button />
                             </div>
                         </Col>
@@ -62,7 +62,7 @@ const Business = () => {
             </section>
             {/* end */}
             {/* inner two */}
-            <InnerSecTwo items={innerSecTwoData.fiction} />
+            <InnerSecTwo items={innerSecTwoData.business} />
             {/* end */}
             {/* slider sec */}
             <SliderSec items={slideContent.businessPage}/>
@@ -71,13 +71,13 @@ const Business = () => {
             <section className="road-map">
                 <Container>
                     <Row className="justify-content-center">
-                        <Col xl={8} lg={8} md={10}>
-                            <SectionTitle smallHeading="Roadmap" heading="THE PATH OF YOUR EBOOK" desc="A step-by-step crafted process to transform your idea into a beautifully published eBook — ready for readers, stores, and success." HeadingTag="h3" />
+                        <Col xl={10} lg={10} md={10}>
+                            <SectionTitle smallHeading="Roadmap" heading="Work Process Business Book Writing Service in Four Steps" desc="The four-step process that we perform in a systematic way will make sure that your ideas are changed into a powerful, magazine-ready book that will enhance your credibility and touch the hearts of readers." HeadingTag="h3" />
                         </Col>
                     </Row>
                     <div className="road-map-body">
                         <div className="road-map-left">
-                            <MapLeftInner items={roadMapInnerData.leftInner} />
+                            <MapLeftInner items={roadMapInnerData.businessLeftInner} />
                         </div>
                         <div className="road-map-center d-lg-block d-none">
                             <div className="shape">
@@ -101,7 +101,7 @@ const Business = () => {
                             </div>
                         </div>
                         <div className="road-map-right">
-                            <MapRightInner items={roadMapInnerData.rightInner} />
+                            <MapRightInner items={roadMapInnerData.businessRightInner} />
                         </div>
                     </div>
                 </Container>
@@ -112,11 +112,11 @@ const Business = () => {
                 <Container>
                     <Row className="justify-content-center">
                         <Col xl={8} lg={8} md={10}>
-                            <SectionTitle heading="Our collection" smallHeading="Explore our newly released NFT collection " HeadingTag="h3" />
+                            <SectionTitle heading="Business Book Writing Services" smallHeading="XYZ Site Four Benefits of" HeadingTag="h3" />
                         </Col>
                     </Row>
                     <div className="inner-five-body">
-                        <InnerSecFive items={innerFiveData.fiction} />
+                        <InnerSecFive items={innerFiveData.business} />
                     </div>
                 </Container>
             </section>
@@ -125,7 +125,7 @@ const Business = () => {
             <FullImage />
             {/* end */}
             {/* faqs */}
-            <Faqs items={faqsContent.fiction} />
+            <Faqs items={faqsContent.business} />
             {/* end */}
             {/* get quote */}
             <GetQuote />
@@ -134,4 +134,4 @@ const Business = () => {
     )
 }
 
-export default Business
+export default BusinessPage

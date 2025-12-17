@@ -23,7 +23,7 @@ export const metadata = {
   // description: "Home",
 };
 
-const Autobiography = () => {
+const AutobiographyPage = () => {
     return (
         <>
             {/* top banner */}
@@ -31,7 +31,7 @@ const Autobiography = () => {
                 <Container>
                     <Row className="justify-content-between align-items-center">
                         <Col xl={6} lg={6} md={6}>
-                            <TopContent someHeadingOne="Professional" someHeadingTwo="Writing Services" spanTitle="EBook" desc="Avail the best ghost-writing services from our affordable self-publishing ghostwriting agency. We are experts in creating fiction, non-fiction, mysteries." />
+                            <TopContent someHeadingOne="We Don't" someHeadingTwo="We Write as You" spanTitle="Write for You." desc="We do not give your story to just any writer. We put you with a professional who has a good understanding of the personal narration." />
                         </Col>
                         <Col xl={4} lg={4} md={4}>
                             <div className="img-right">
@@ -46,9 +46,9 @@ const Autobiography = () => {
             <section className="inner-sec-one">
                 <Container>
                     <Row className="justify-content-between align-items-center">
-                        <Col xl={6} lg={6} md={6}>
+                        <Col xl={7} lg={7} md={7}>
                             <div className="left">
-                                <SectionTitle heading="Create Magical Stories" desc="Where innovation fuels success! Empower your business with tailor-made mobile apps designed to enhance performance, elevate user experience, and solidify your market presence. Our expertise spans industries like finance, retail, education, healthcare, and beyond." HeadingTag="h2" />
+                                <SectionTitle heading="There Are Three Important Elements of Autobiography Writing Services" desc="A record of events is not an autobiography since it is the account of a life, spoken honestly, deeply, and purposefully. An autobiography that is well developed not only brings back memories but also makes people inspired, informed, and also connects with the readers." HeadingTag="h2" />
                                 <Button />
                             </div>
                         </Col>
@@ -62,7 +62,7 @@ const Autobiography = () => {
             </section>
             {/* end */}
             {/* inner two */}
-            <InnerSecTwo items={innerSecTwoData.fiction} />
+            <InnerSecTwo items={innerSecTwoData.autobiography} />
             {/* end */}
             {/* slider sec */}
             <SliderSec items={slideContent.autobiographyPage}/>
@@ -71,13 +71,13 @@ const Autobiography = () => {
             <section className="road-map">
                 <Container>
                     <Row className="justify-content-center">
-                        <Col xl={8} lg={8} md={10}>
-                            <SectionTitle smallHeading="Roadmap" heading="THE PATH OF YOUR EBOOK" desc="A step-by-step crafted process to transform your idea into a beautifully published eBook — ready for readers, stores, and success." HeadingTag="h3" />
+                        <Col xl={10} lg={10} md={10}>
+                            <SectionTitle smallHeading="Roadmap" heading="Work Process - Writing Service Autobiography in four steps" desc="A combination of editorial experience and storytelling skills combine to create a powerful book to capture your story and its publication quality." HeadingTag="h3" />
                         </Col>
                     </Row>
                     <div className="road-map-body">
                         <div className="road-map-left">
-                            <MapLeftInner items={roadMapInnerData.leftInner} />
+                            <MapLeftInner items={roadMapInnerData.autobiographyLeftInner} />
                         </div>
                         <div className="road-map-center d-lg-block d-none">
                             <div className="shape">
@@ -101,7 +101,7 @@ const Autobiography = () => {
                             </div>
                         </div>
                         <div className="road-map-right">
-                            <MapRightInner items={roadMapInnerData.rightInner} />
+                            <MapRightInner items={roadMapInnerData.autobiographyRightInner} />
                         </div>
                     </div>
                 </Container>
@@ -112,11 +112,11 @@ const Autobiography = () => {
                 <Container>
                     <Row className="justify-content-center">
                         <Col xl={8} lg={8} md={10}>
-                            <SectionTitle heading="Our collection" smallHeading="Explore our newly released NFT collection " HeadingTag="h3" />
+                            <SectionTitle heading="Autobiography Writing Services XYZ Site" smallHeading="Four Advantages of" HeadingTag="h3" />
                         </Col>
                     </Row>
                     <div className="inner-five-body">
-                        <InnerSecFive items={innerFiveData.fiction} />
+                        <InnerSecFive items={innerFiveData.autobiography} />
                     </div>
                 </Container>
             </section>
@@ -125,7 +125,7 @@ const Autobiography = () => {
             <FullImage />
             {/* end */}
             {/* faqs */}
-            <Faqs items={faqsContent.fiction} />
+            <Faqs items={faqsContent.autobiography} />
             {/* end */}
             {/* get quote */}
             <GetQuote />
@@ -134,4 +134,4 @@ const Autobiography = () => {
     )
 }
 
-export default Autobiography
+export default AutobiographyPage

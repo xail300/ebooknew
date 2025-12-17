@@ -23,7 +23,7 @@ export const metadata = {
   // description: "Home",
 };
 
-const NovelWriting = () => {
+const NovelWritingPage = () => {
     return (
         <>
             {/* top banner */}
@@ -31,7 +31,7 @@ const NovelWriting = () => {
                 <Container>
                     <Row className="justify-content-between align-items-center">
                         <Col xl={6} lg={6} md={6}>
-                            <TopContent someHeadingOne="Professional" someHeadingTwo="Writing Services" spanTitle="EBook" desc="Avail the best ghost-writing services from our affordable self-publishing ghostwriting agency. We are experts in creating fiction, non-fiction, mysteries." />
+                            <TopContent someHeadingOne="XYZ Authentic and Expert" someHeadingTwo="Services" spanTitle="Novel Writing" desc="At XYZ, we capitalize in your imaginations, ideas and creative works to come up with immersive, well-written novels." />
                         </Col>
                         <Col xl={4} lg={4} md={4}>
                             <div className="img-right">
@@ -46,9 +46,9 @@ const NovelWriting = () => {
             <section className="inner-sec-one">
                 <Container>
                     <Row className="justify-content-between align-items-center">
-                        <Col xl={6} lg={6} md={6}>
+                        <Col xl={7} lg={7} md={7}>
                             <div className="left">
-                                <SectionTitle heading="Create Magical Stories" desc="Where innovation fuels success! Empower your business with tailor-made mobile apps designed to enhance performance, elevate user experience, and solidify your market presence. Our expertise spans industries like finance, retail, education, healthcare, and beyond." HeadingTag="h2" />
+                                <SectionTitle heading="Three Major Components of the Novel Writing Services" desc="A good novel is more than a story, it is a journey, a feeling and the impression that will be remembered. It is the real craft of novel writing to turn imagination, characters and themes into a story that lingers on long after the last page." HeadingTag="h2" />
                                 <Button />
                             </div>
                         </Col>
@@ -62,7 +62,7 @@ const NovelWriting = () => {
             </section>
             {/* end */}
             {/* inner two */}
-            <InnerSecTwo items={innerSecTwoData.fiction} />
+            <InnerSecTwo items={innerSecTwoData.novelWriting} />
             {/* end */}
             {/* slider sec */}
             <SliderSec items={slideContent.novelPage}/>
@@ -71,13 +71,13 @@ const NovelWriting = () => {
             <section className="road-map">
                 <Container>
                     <Row className="justify-content-center">
-                        <Col xl={8} lg={8} md={10}>
-                            <SectionTitle smallHeading="Roadmap" heading="THE PATH OF YOUR EBOOK" desc="A step-by-step crafted process to transform your idea into a beautifully published eBook — ready for readers, stores, and success." HeadingTag="h3" />
+                        <Col xl={10} lg={10} md={10}>
+                            <SectionTitle smallHeading="Roadmap" heading="Work Process - Novel Writing Service 4 Steps" desc="We make sure that your story is immersive, emotionally connecting and publication-ready." HeadingTag="h3" />
                         </Col>
                     </Row>
                     <div className="road-map-body">
                         <div className="road-map-left">
-                            <MapLeftInner items={roadMapInnerData.leftInner} />
+                            <MapLeftInner items={roadMapInnerData.novelWritingLeftInner} />
                         </div>
                         <div className="road-map-center d-lg-block d-none">
                             <div className="shape">
@@ -101,7 +101,7 @@ const NovelWriting = () => {
                             </div>
                         </div>
                         <div className="road-map-right">
-                            <MapRightInner items={roadMapInnerData.rightInner} />
+                            <MapRightInner items={roadMapInnerData.novelWritingRightInner} />
                         </div>
                     </div>
                 </Container>
@@ -112,11 +112,11 @@ const NovelWriting = () => {
                 <Container>
                     <Row className="justify-content-center">
                         <Col xl={8} lg={8} md={10}>
-                            <SectionTitle heading="Our collection" smallHeading="Explore our newly released NFT collection " HeadingTag="h3" />
+                            <SectionTitle heading="Our New Writing Service" smallHeading="XYZ Website 4 Benefits of" HeadingTag="h3" />
                         </Col>
                     </Row>
                     <div className="inner-five-body">
-                        <InnerSecFive items={innerFiveData.fiction} />
+                        <InnerSecFive items={innerFiveData.novelWriting} />
                     </div>
                 </Container>
             </section>
@@ -125,7 +125,7 @@ const NovelWriting = () => {
             <FullImage />
             {/* end */}
             {/* faqs */}
-            <Faqs items={faqsContent.fiction} />
+            <Faqs items={faqsContent.novelWriting} />
             {/* end */}
             {/* get quote */}
             <GetQuote />
@@ -134,4 +134,4 @@ const NovelWriting = () => {
     )
 }
 
-export default NovelWriting
+export default NovelWritingPage

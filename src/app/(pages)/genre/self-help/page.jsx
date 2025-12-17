@@ -23,7 +23,7 @@ export const metadata = {
     // description: "Home",
 };
 
-const SelfHelp = () => {
+const SelfHelpPage = () => {
     return (
         <>
             {/* top banner */}
@@ -31,7 +31,7 @@ const SelfHelp = () => {
                 <Container>
                     <Row className="justify-content-between align-items-center">
                         <Col xl={6} lg={6} md={6}>
-                            <TopContent someHeadingOne="Professional" someHeadingTwo="Writing Services" spanTitle="EBook" desc="Avail the best ghost-writing services from our affordable self-publishing ghostwriting agency. We are experts in creating fiction, non-fiction, mysteries." />
+                            <TopContent someHeadingOne="XYZ Authentic and Expert Book Writing Services of" someHeadingTwo="Books" spanTitle="Self-Help" desc="We are XYZ, and we turn your observations, life experiences, and inspirational thoughts into strong self-help books that actually mean something." />
                         </Col>
                         <Col xl={4} lg={4} md={4}>
                             <div className="img-right">
@@ -46,9 +46,9 @@ const SelfHelp = () => {
             <section className="inner-sec-one">
                 <Container>
                     <Row className="justify-content-between align-items-center">
-                        <Col xl={6} lg={6} md={6}>
+                        <Col xl={7} lg={7} md={7}>
                             <div className="left">
-                                <SectionTitle heading="Create Magical Stories" desc="Where innovation fuels success! Empower your business with tailor-made mobile apps designed to enhance performance, elevate user experience, and solidify your market presence. Our expertise spans industries like finance, retail, education, healthcare, and beyond." HeadingTag="h2" />
+                                <SectionTitle heading="Three Significant Elements of Self-Help Book Writing Services" desc="An effective self-help book should not just relay something but it should give direction, inspire, and produce long-lasting changes in readers. The real art is to convert your knowledge, experience and lessons into an easily understandable empowering message that can remain in the minds of people even after reading the book." HeadingTag="h2" />
                                 <Button />
                             </div>
                         </Col>
@@ -62,7 +62,7 @@ const SelfHelp = () => {
             </section>
             {/* end */}
             {/* inner two */}
-            <InnerSecTwo items={innerSecTwoData.fiction} />
+            <InnerSecTwo items={innerSecTwoData.selfHelp} />
             {/* end */}
             {/* slider sec */}
             <SliderSec items={slideContent.selfHelpPage} />
@@ -71,13 +71,13 @@ const SelfHelp = () => {
             <section className="road-map">
                 <Container>
                     <Row className="justify-content-center">
-                        <Col xl={8} lg={8} md={10}>
-                            <SectionTitle smallHeading="Roadmap" heading="THE PATH OF YOUR EBOOK" desc="A step-by-step crafted process to transform your idea into a beautifully published eBook — ready for readers, stores, and success." HeadingTag="h3" />
+                        <Col xl={10} lg={10} md={10}>
+                            <SectionTitle smallHeading="Roadmap" heading="Self-Help Book Writing Service (4 Steps) Work Process" desc="Your knowledge, teaching and advice are thereupon reduced into a self-help book, which is clear, motivating, and publication-ready." HeadingTag="h3" />
                         </Col>
                     </Row>
                     <div className="road-map-body">
                         <div className="road-map-left">
-                            <MapLeftInner items={roadMapInnerData.leftInner} />
+                            <MapLeftInner items={roadMapInnerData.selfHelpLeftInner} />
                         </div>
                         <div className="road-map-center d-lg-block d-none">
                             <div className="shape">
@@ -101,7 +101,7 @@ const SelfHelp = () => {
                             </div>
                         </div>
                         <div className="road-map-right">
-                            <MapRightInner items={roadMapInnerData.rightInner} />
+                            <MapRightInner items={roadMapInnerData.selfHelpRightInner} />
                         </div>
                     </div>
                 </Container>
@@ -112,11 +112,11 @@ const SelfHelp = () => {
                 <Container>
                     <Row className="justify-content-center">
                         <Col xl={8} lg={8} md={10}>
-                            <SectionTitle heading="Our collection" smallHeading="Explore our newly released NFT collection " HeadingTag="h3" />
+                            <SectionTitle heading="Our Self-Help Book Writing Service" smallHeading="XYZ Website 4 Advantages of " HeadingTag="h3" />
                         </Col>
                     </Row>
                     <div className="inner-five-body">
-                        <InnerSecFive items={innerFiveData.fiction} />
+                        <InnerSecFive items={innerFiveData.selfHelp} />
                     </div>
                 </Container>
             </section>
@@ -125,7 +125,7 @@ const SelfHelp = () => {
             <FullImage />
             {/* end */}
             {/* faqs */}
-            <Faqs items={faqsContent.fiction} />
+            <Faqs items={faqsContent.selfHelp} />
             {/* end */}
             {/* get quote */}
             <GetQuote />
@@ -134,4 +134,4 @@ const SelfHelp = () => {
     )
 }
 
-export default SelfHelp
+export default SelfHelpPage

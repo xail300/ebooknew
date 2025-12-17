@@ -21,7 +21,7 @@ export const metadata = {
   // description: "Home",
 };
 
-const Autobiography = () => {
+const ChildrenBookPage = () => {
     return (
         <>
             {/* top banner */}
@@ -29,7 +29,7 @@ const Autobiography = () => {
                 <Container>
                     <Row className="justify-content-between align-items-center">
                         <Col xl={6} lg={6} md={6}>
-                            <TopContent someHeadingOne="Professional" someHeadingTwo="Writing Services" spanTitle="EBook" desc="Avail the best ghost-writing services from our affordable self-publishing ghostwriting agency. We are experts in creating fiction, non-fiction, mysteries." />
+                            <TopContent someHeadingOne="Hire Our Experienced" someHeadingTwo="Writers" spanTitle="Children Book" desc="We understand that it is no child's play to write a children's book. That is the reason we offer professional children's book ghost writers who creatively write pleasant juvenile books." />
                         </Col>
                         <Col xl={4} lg={4} md={4}>
                             <div className="img-right">
@@ -44,9 +44,9 @@ const Autobiography = () => {
             <section className="inner-sec-one">
                 <Container>
                     <Row className="justify-content-between align-items-center">
-                        <Col xl={6} lg={6} md={6}>
+                        <Col xl={7} lg={7} md={7}>
                             <div className="left">
-                                <SectionTitle heading="Create Magical Stories" desc="Where innovation fuels success! Empower your business with tailor-made mobile apps designed to enhance performance, elevate user experience, and solidify your market presence. Our expertise spans industries like finance, retail, education, healthcare, and beyond." HeadingTag="h2" />
+                                <SectionTitle heading="Three Critical Components of eBook services of children" desc="The presentation of books and not just of children is almost as significant as the story itself. Getting a good children eBook is not only entertaining but also creative, curious and educational. Our age-effective eBook services are special to children, and thus, your ideas and stories are converted to appealing, tolerable, and captivating eBooks." HeadingTag="h2" />
                                 <Button />
                             </div>
                         </Col>
@@ -60,19 +60,19 @@ const Autobiography = () => {
             </section>
             {/* end */}
             {/* inner two */}
-            <InnerSecTwo items={innerSecTwoData.fiction} />
+            <InnerSecTwo items={innerSecTwoData.childrenBook} />
             {/* end */}
             {/* road map */}
             <section className="road-map">
                 <Container>
                     <Row className="justify-content-center">
-                        <Col xl={8} lg={8} md={10}>
-                            <SectionTitle smallHeading="Roadmap" heading="THE PATH OF YOUR EBOOK" desc="A step-by-step crafted process to transform your idea into a beautifully published eBook — ready for readers, stores, and success." HeadingTag="h3" />
+                        <Col xl={10} lg={10} md={10}>
+                            <SectionTitle smallHeading="Roadmap" heading="Work Process eBook Service to children - 4 steps" desc="We do not simply ensure that your eBook to children is enjoyable and entertaining, we also make sure that the eBook is designed to please young readers with the platform that is as good as it gets. We combine creativity and storytelling with technical skills in order to make your book a reality." HeadingTag="h3" />
                         </Col>
                     </Row>
                     <div className="road-map-body">
                         <div className="road-map-left">
-                            <MapLeftInner items={roadMapInnerData.leftInner} />
+                            <MapLeftInner items={roadMapInnerData.childrenBookLeftInner} />
                         </div>
                         <div className="road-map-center d-lg-block d-none">
                             <div className="shape">
@@ -96,7 +96,7 @@ const Autobiography = () => {
                             </div>
                         </div>
                         <div className="road-map-right">
-                            <MapRightInner items={roadMapInnerData.rightInner} />
+                            <MapRightInner items={roadMapInnerData.childrenBookRightInner} />
                         </div>
                     </div>
                 </Container>
@@ -107,11 +107,11 @@ const Autobiography = () => {
                 <Container>
                     <Row className="justify-content-center">
                         <Col xl={8} lg={8} md={10}>
-                            <SectionTitle heading="Our collection" smallHeading="Explore our newly released NFT collection " HeadingTag="h3" />
+                            <SectionTitle heading="eBook Services of XYZ Site to Children" smallHeading="Four Benefits of" HeadingTag="h3" />
                         </Col>
                     </Row>
                     <div className="inner-five-body">
-                        <InnerSecFive items={innerFiveData.fiction} />
+                        <InnerSecFive items={innerFiveData.childrenBook} />
                     </div>
                 </Container>
             </section>
@@ -120,7 +120,7 @@ const Autobiography = () => {
             <FullImage />
             {/* end */}
             {/* faqs */}
-            <Faqs items={faqsContent.fiction} />
+            <Faqs items={faqsContent.childrenBook} />
             {/* end */}
             {/* get quote */}
             <GetQuote />
@@ -129,4 +129,4 @@ const Autobiography = () => {
     )
 }
 
-export default Autobiography
+export default ChildrenBookPage

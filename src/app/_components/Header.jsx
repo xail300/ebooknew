@@ -68,6 +68,12 @@ const Header = () => {
     }, [pathname])
     // end
 
+    // hide dropdown when click
+    const hideDropdown = () => {
+        setIsHover({ services: false, genre: false });
+    };
+    // end
+
     return (
         <>
             <header className={`header ${isSticky ? 'sticky' : ''}`}>
@@ -95,12 +101,12 @@ const Header = () => {
                                     <ul className={`dropdown-menu ${isHover.services ? 'show' : ''}`}
                                         onMouseEnter={() => handleMouseEnter('services')}
                                         onMouseLeave={() => handleMouseLeave('services')} aria-labelledby="navbarDropdown">
-                                        <li><Link className="dropdown-item" href="/services/ebook-writing">eBook Writing</Link></li>
-                                        <li><Link className="dropdown-item" href="/services/ebook-editing">eBook Editing</Link></li>
-                                        <li><Link className="dropdown-item" href="/services/ebook-marketing">eBook Marketing</Link></li>
-                                        <li><Link className="dropdown-item" href="/services/ebook-publishing">eBook Publishing</Link></li>
-                                        <li><Link className="dropdown-item" href="/services/ebook-cover">eBook Cover</Link></li>
-                                        <li><Link className="dropdown-item" href="/services/children-book">Children Book</Link></li>
+                                        <li><Link className="dropdown-item" href="/services/ebook-writing" onClick={hideDropdown}>eBook Writing</Link></li>
+                                        <li><Link className="dropdown-item" href="/services/ebook-editing" onClick={hideDropdown}>eBook Editing</Link></li>
+                                        <li><Link className="dropdown-item" href="/services/ebook-marketing" onClick={hideDropdown}>eBook Marketing</Link></li>
+                                        <li><Link className="dropdown-item" href="/services/ebook-publishing" onClick={hideDropdown}>eBook Publishing</Link></li>
+                                        <li><Link className="dropdown-item" href="/services/ebook-cover" onClick={hideDropdown}>eBook Cover</Link></li>
+                                        <li><Link className="dropdown-item" href="/services/children-book" onClick={hideDropdown}>Children Book</Link></li>
                                     </ul>
                                 </li>
                                 <li className="nav-item dropdown">
@@ -111,13 +117,13 @@ const Header = () => {
                                         onMouseEnter={() => handleMouseEnter('genre')}
                                         onMouseLeave={() => handleMouseLeave('genre')}
                                         aria-labelledby="navbarDropdown">
-                                        <li><Link className="dropdown-item" href="/genre/autobiography">Autobiography</Link> </li>
-                                        <li><Link className="dropdown-item" href="/genre/business">Business</Link></li>
-                                        <li><Link className="dropdown-item" href="/genre/fiction">Fiction</Link> </li>
-                                        <li><Link className="dropdown-item" href="/genre/mystery-book">Mystery Book</Link></li>
-                                        <li><Link className="dropdown-item" href="/genre/non-fiction">Non-Fiction</Link></li>
-                                        <li><Link className="dropdown-item" href="/genre/novel-writing">Novel Writing</Link> </li>
-                                        <li><Link className="dropdown-item" href="/genre/self-help">Self Help</Link></li>
+                                        <li><Link className="dropdown-item" href="/genre/autobiography" onClick={hideDropdown}>Autobiography</Link> </li>
+                                        <li><Link className="dropdown-item" href="/genre/business" onClick={hideDropdown}>Business</Link></li>
+                                        <li><Link className="dropdown-item" href="/genre/fiction" onClick={hideDropdown}>Fiction</Link> </li>
+                                        <li><Link className="dropdown-item" href="/genre/mystery-book" onClick={hideDropdown}>Mystery Book</Link></li>
+                                        <li><Link className="dropdown-item" href="/genre/non-fiction" onClick={hideDropdown}>Non-Fiction</Link></li>
+                                        <li><Link className="dropdown-item" href="/genre/novel-writing" onClick={hideDropdown}>Novel Writing</Link> </li>
+                                        <li><Link className="dropdown-item" href="/genre/self-help" onClick={hideDropdown}>Self Help</Link></li>
                                     </ul>
                                 </li>
                                 <li className="nav-item">
