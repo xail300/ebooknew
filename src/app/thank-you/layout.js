@@ -2,12 +2,11 @@ import { Dela_Gothic_One } from "next/font/google";
 import { Archivo } from "next/font/google";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../globals.css";
-import 'remixicon/fonts/remixicon.css'
-import Header from "@/app/_components/Header";
-import Footer from "@/app/_components/Footer";
-import { ModalProvider } from "@/app/context/ModalContext";
-import { Toaster } from "react-hot-toast";
 
+export const metadata = {
+  title: "Thank You",
+  // description: "Home",
+};
 
 const delaGothic = Dela_Gothic_One({
   subsets: ["latin"],
@@ -21,16 +20,11 @@ const archivo = Archivo({
   display: "swap",
 });
 
-export default function RootLayout({ children }) {
+export default function ThankYouLayout({ children }) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
       <body className={`${delaGothic.className} ${archivo.className}`}>
-        <ModalProvider>
-          <Header />
-          {children}
-          <Toaster position="top-right" reverseOrder={false} />
-          <Footer />
-        </ModalProvider>
+        {children}
       </body>
     </html>
   );

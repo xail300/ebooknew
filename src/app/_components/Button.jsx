@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { useModal } from '../context/ModalContext'
+import { useModal } from '@/app/context/ModalContext'
 
 const Button = () => {
 

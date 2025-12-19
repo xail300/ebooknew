@@ -10,7 +10,7 @@ const delaGothic = Dela_Gothic_One({
   display: "swap",
 });
 
-const archivo = Archivo({
+const archivo = Archivo({ 
   subsets: ["latin"],
   weight: "400",
   display: "swap",
@@ -20,7 +20,7 @@ export const metadata = {
   title: "Admin Panel",
 };
 
-export default function RootLayout({ children }) {
+export default function AdminLayout({ children }) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
       <body className={`${delaGothic.className} ${archivo.className}`} style={{display:'flex', height:'100vh', alignItems:'center'}}>

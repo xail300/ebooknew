@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react'
 import { Col, Container, Form, Row } from 'react-bootstrap'
-import { auth, db } from '../lib/firebase'
+import { auth, db } from '@/lib/firebase'
 import { doc, getDoc, updateDoc } from 'firebase/firestore'
 import { signInWithEmailAndPassword } from 'firebase/auth'
 

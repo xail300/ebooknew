@@ -1,4 +1,5 @@
 'use client'
+import { sendEmail } from '@/lib/sendEmail'
 import Image from 'next/image'
 import React, { useState } from 'react'
 import { Col, Container, Form, Row } from 'react-bootstrap'
@@ -19,19 +20,19 @@ const GetQuote = () => {
             toast.error('Please fill out all required fields.');
             return;
         }
-
-        try {
-            if (true) {
-                toast.success('Form submitted successfully!');
-                form.reset()
-            }
-        } catch (error) {
-
-        }
-
         // form sending to email
-        // const formData = new FormData(form);
-        // await sendMail(formData);
+        try {
+            const formData = new FormData(form);
+            const res = await sendEmail(formData)
+            toast.success(res.message);
+            form.reset();
+            setValidated(false);
+            setTimeout(() => {
+                window.location.href = "/thank-you";
+            }, 2000);
+        } catch (error) {
+            toast.error(error.message || "Something went wrong");
+        }
         // end
     };
 
@@ -69,7 +70,7 @@ const GetQuote = () => {
                                     <div className="col-md-12">
                                         <div className="mb-4">
                                             <Form.Label htmlFor="contact">Message</Form.Label>
-                                            <Form.Control as="textarea" rows={4} />
+                                            <Form.Control as="textarea" rows={4} name="message"/>
                                         </div>
                                     </div>
                                     <div className="col-md-12">
