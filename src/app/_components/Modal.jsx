@@ -1,8 +1,9 @@
-// import { sendMail } from '@/lib/sendEmail';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Col, Form, Modal, Row } from 'react-bootstrap';
 import { useModal } from '../context/ModalContext';
 import toast from 'react-hot-toast';
+import { sendEmail } from '@/lib/sendEmail';
+import { usePathname } from 'next/navigation';
 
 
 const CustomModal = () => {
@@ -21,12 +22,29 @@ const CustomModal = () => {
             toast.error('Please fill out all required fields.');
             return;
         }
-
         // form sending to email
-        // const formData = new FormData(form);
-        // await sendMail(formData);
+        try {
+            const formData = new FormData(form);
+            const res = await sendEmail(formData)
+            toast.success(res.message);
+            form.reset();
+            setValidated(false);
+            setTimeout(() => {
+                window.location.href = "/thank-you";
+            }, 2000);
+        } catch (error) {
+            toast.error(error.message || "Something went wrong");
+        }
         // end
     };
+    
+    // field display logic based on pathname
+    const pathName = usePathname();
+    const isServicePage = pathName.startsWith('/services');
+    const isGenrePage = pathName.startsWith('/genre');
+    const isHomePage = pathName === '/';
+    const isContactPage = pathName === '/contact-us';
+    // end
 
     return (
         <>
@@ -58,39 +76,46 @@ const CustomModal = () => {
                                         <Form.Control type="number" id="contact" name="phone" placeholder="Enter Phone Number*" required />
                                     </div>
                                 </Col>
-                                <Col md={12}>
-                                    <div className="mb-3">
-                                        <Form.Label htmlFor="service">Service</Form.Label>
-                                        <Form.Select name="service" id="service" defaultValue="">
-                                            <option value="" disabled>Select Service</option>
-                                            <option value="eBook Writing">eBook Writing</option>
-                                            <option value="eBook Editing">eBook Editing</option>
-                                            <option value="eBook Marketing">eBook Marketing</option>
-                                            <option value="eBook Publishing">eBook Publishing</option>
-                                            <option value="eBook Cover">eBook Cover</option>
-                                            <option value="Children Book">Children Book</option>
-                                        </Form.Select>
-                                    </div>
-                                </Col>
-                                <Col md={12}>
-                                    <div className="mb-3">
-                                        <Form.Label htmlFor="service">Genre</Form.Label>
-                                        <Form.Select name="service" id="service" defaultValue="">
-                                            <option value="" disabled>Select a Genre</option>
-                                            <option value="Autobiography">Autobiography</option>
-                                            <option value="Business">Business</option>
-                                            <option value="Fiction">Fiction</option>
-                                            <option value="Mystery Book">Mystery Book</option>
-                                            <option value="Non-Fiction">Non-Fiction</option>
-                                            <option value="Novel Writing">Novel Writing</option>
-                                            <option value="Self Help">Self Help</option>
-                                        </Form.Select>
-                                    </div>
-                                </Col>
+                                {(isServicePage || isHomePage || isContactPage) && (
+                                    <Col md={12}>
+                                        <div className="mb-3">
+                                            <Form.Label htmlFor="service">Service</Form.Label>
+                                            <Form.Select name="service" id="service" defaultValue="">
+                                                <option value="" disabled>Select Service</option>
+                                                <option value="eBook Writing">eBook Writing</option>
+                                                <option value="eBook Editing">eBook Editing</option>
+                                                <option value="eBook Marketing">eBook Marketing</option>
+                                                <option value="eBook Publishing">eBook Publishing</option>
+                                                <option value="eBook Cover">eBook Cover</option>
+                                                <option value="Children Book">Children Book</option>
+                                            </Form.Select>
+                                        </div>
+                                    </Col>
+                                )}
+
+                                {/* GENRE – sirf /genre ke andar sab pages */}
+                                {(isGenrePage || isHomePage || isContactPage) && (
+                                    <Col md={12}>
+                                        <div className="mb-3">
+                                            <Form.Label htmlFor="genre">Genre</Form.Label>
+                                            <Form.Select name="genre" id="genre" defaultValue="">
+                                                <option value="" disabled>Select a Genre</option>
+                                                <option value="Autobiography">Autobiography</option>
+                                                <option value="Business">Business</option>
+                                                <option value="Fiction">Fiction</option>
+                                                <option value="Mystery Book">Mystery Book</option>
+                                                <option value="Non-Fiction">Non-Fiction</option>
+                                                <option value="Novel Writing">Novel Writing</option>
+                                                <option value="Self Help">Self Help</option>
+                                            </Form.Select>
+                                        </div>
+                                    </Col>
+                                )}
+                                
                                 <Col md={12}>
                                     <div className="mb-3">
                                         <Form.Label htmlFor="message">Message</Form.Label>
-                                        <Form.Control as="textarea" id='message' rows={4} placeholder='Message' />
+                                        <Form.Control as="textarea" name="message" id='message' rows={4} placeholder='Message' />
                                     </div>
                                 </Col>
                                 <Col md={12}>
